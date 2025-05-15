@@ -55,7 +55,7 @@ module.exports = function (grunt) {
     watch: {
       css: {
         files: ["src/*.css"],
-        tasks: ["env", "concat_css", "copy"],
+        tasks: ["env", "loadconst", "concat_css", "copy"],
       },
     },
   });
