@@ -173,12 +173,13 @@ body {
   text-underline-offset: 0.3em;
 }
 
-/* Opaque background fix */
+/* Transparent background fix */
 .prompt,
 .popover,
 .suggestion,
+.lt-predictions-container,
 .vertical-tab-content {
-  background-color: var(--modal-background);
+  background-color: var(--modal-background) !important;
 }
 
 /* Fix titlebar draggability */
