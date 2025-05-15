@@ -1,10 +1,8 @@
 # 🌅 Meridian
 
-A sleek and minimal theme for Obsidian.
+A sleek and minimal theme for [Obsidian](https://obsidian.md),
 
-![](./docs/cover.png)
-
-A nice looking minimal theme for [Obsidian](https://obsidian.md),
+![Screenshot](./docs/cover.png)
 
 ## Issues & Feature Requests
 
