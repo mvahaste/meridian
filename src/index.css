@@ -1,34 +1,32 @@
 /* Obsidian Variables */
 body {
-  --h1-size: calc(var(--font-text-size) * 1.6);
-  --h2-size: calc(var(--font-text-size) * 1.4);
-  --h3-size: calc(var(--font-text-size) * 1.2);
-  --h4-size: var(--font-text-size);
-  --h5-size: var(--font-text-size);
-  --h6-size: var(--font-text-size);
-  --h1-line-height: 1.7;
-  --h2-line-height: 1.7;
-  --h3-line-height: 1.7;
+  /* Bigger headers */
+  --h1-size: calc(var(--font-text-size) * 2);
+  --h2-size: calc(var(--font-text-size) * 1.6);
+  --h3-size: calc(var(--font-text-size) * 1.4);
+  --h4-size: calc(var(--font-text-size) * 1.2);
+  --h5-size: calc(var(--font-text-size) * 1.1);
+  --h6-size: calc(var(--font-text-size) * 1);
+
+  /* Taller lines */
+  --h1-line-height: 2;
+  --h2-line-height: 1.9;
+  --h3-line-height: 1.8;
   --h4-line-height: 1.7;
   --h5-line-height: 1.7;
   --h6-line-height: 1.7;
-  --list-marker-color: var(--text-normal);
-  --modal-background: var(--background-secondary);
-  --font-text: "Geist Mono", ui-monospace, monospace;
-  --h1-font: "Geist", system-ui, sans-serif;
-  --h2-font: "Geist", system-ui, sans-serif;
-  --h3-font: "Geist", system-ui, sans-serif;
   --line-height-normal: 1.7;
+
+  /* Link style */
   --link-decoration: underline;
   --link-unresolved-decoration-color: var(--text-muted);
   --link-external-decoration-color: var(--text-muted);
-  --checklist-done-color: rgb(60, 152, 60);
-  --checklist-done-decoration: none;
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  --checkbox-marker-color: transparent;
+
+  /* Colors */
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --checkbox-marker-color: var(--background-secondary);
+  --modal-background: var(--background-secondary);
   --divider-color: transparent;
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.4);
 }
 
 /* Basic Theme Colours */

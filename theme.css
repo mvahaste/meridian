@@ -108,35 +108,33 @@
 }
 /* Obsidian Variables */
 body {
-  --h1-size: calc(var(--font-text-size) * 1.6);
-  --h2-size: calc(var(--font-text-size) * 1.4);
-  --h3-size: calc(var(--font-text-size) * 1.2);
-  --h4-size: var(--font-text-size);
-  --h5-size: var(--font-text-size);
-  --h6-size: var(--font-text-size);
-  --h1-line-height: 1.7;
-  --h2-line-height: 1.7;
-  --h3-line-height: 1.7;
+  /* Bigger headers */
+  --h1-size: calc(var(--font-text-size) * 2);
+  --h2-size: calc(var(--font-text-size) * 1.6);
+  --h3-size: calc(var(--font-text-size) * 1.4);
+  --h4-size: calc(var(--font-text-size) * 1.2);
+  --h5-size: calc(var(--font-text-size) * 1.1);
+  --h6-size: calc(var(--font-text-size) * 1);
+
+  /* Taller lines */
+  --h1-line-height: 2;
+  --h2-line-height: 1.9;
+  --h3-line-height: 1.8;
   --h4-line-height: 1.7;
   --h5-line-height: 1.7;
   --h6-line-height: 1.7;
-  --list-marker-color: var(--text-normal);
-  --modal-background: var(--background-secondary);
-  --font-text: "Geist Mono", ui-monospace, monospace;
-  --h1-font: "Geist", system-ui, sans-serif;
-  --h2-font: "Geist", system-ui, sans-serif;
-  --h3-font: "Geist", system-ui, sans-serif;
   --line-height-normal: 1.7;
+
+  /* Link style */
   --link-decoration: underline;
   --link-unresolved-decoration-color: var(--text-muted);
   --link-external-decoration-color: var(--text-muted);
-  --checklist-done-color: rgb(60, 152, 60);
-  --checklist-done-decoration: none;
-  --checkbox-color: transparent;
-  --checkbox-color-hover: transparent;
-  --checkbox-marker-color: transparent;
+
+  /* Colors */
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --checkbox-marker-color: var(--background-secondary);
+  --modal-background: var(--background-secondary);
   --divider-color: transparent;
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.4);
 }
 
 /* Basic Theme Colours */
@@ -164,15 +162,6 @@ body {
   border: none;
 }
 
-/* Header padding and letter-spacing */
-.cm-header {
-  letter-spacing: 0.002em;
-}
-
-.HyperMD-header-3 {
-  padding-bottom: 0.4em !important;
-}
-
 /* Link styling */
 .cm-s-obsidian span.cm-hmd-internal-link:hover,
 .cm-s-obsidian span.cm-url,
@@ -184,58 +173,12 @@ body {
   text-underline-offset: 0.3em;
 }
 
-/* Checkbox styling */
-input[type="checkbox"] {
-  border: 0;
-}
-
-input[type="checkbox"]:checked::after,
-input[type="checkbox"]:not(:checked)::after {
-  -webkit-mask-image: none;
-  font-size: var(--font-text-size);
-  width: 40px;
-  font-family: var(--font-text);
-  white-space: nowrap;
-  top: -4px;
-  left: -8px;
-  position: absolute;
-  display: block;
-}
-
-input[type="checkbox"]:not(:checked)::after {
-  content: "[  ]";
-  color: var(--text-normal);
-}
-
-input[type="checkbox"]:checked::after {
-  content: "[x]";
-  color: var(--checklist-done-color);
-}
-
-/* List item styling */
-.list-bullet {
-  color: var(--list-marker-color);
-}
-
-.list-bullet::after {
-  display: none;
-}
-
-.markdown-rendered ul.has-list-bullet {
-  list-style-type: "- ";
-}
-
-.markdown-rendered ul.has-list-bullet > li::marker {
-  color: var(--list-marker-color);
-}
-
-/* Opaque modal backgrounds */
-.prompt {
-  background-color: var(--background-secondary);
-}
-
+/* Opaque background fix */
+.prompt,
+.popover,
+.suggestion,
 .vertical-tab-content {
-  background-color: var(--background-secondary);
+  background-color: var(--modal-background);
 }
 
 /* Fix titlebar draggability */

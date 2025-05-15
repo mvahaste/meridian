@@ -5,15 +5,6 @@
   border: none;
 }
 
-/* Header padding and letter-spacing */
-.cm-header {
-  letter-spacing: 0.002em;
-}
-
-.HyperMD-header-3 {
-  padding-bottom: 0.4em !important;
-}
-
 /* Link styling */
 .cm-s-obsidian span.cm-hmd-internal-link:hover,
 .cm-s-obsidian span.cm-url,
@@ -25,58 +16,12 @@
   text-underline-offset: 0.3em;
 }
 
-/* Checkbox styling */
-input[type="checkbox"] {
-  border: 0;
-}
-
-input[type="checkbox"]:checked::after,
-input[type="checkbox"]:not(:checked)::after {
-  -webkit-mask-image: none;
-  font-size: var(--font-text-size);
-  width: 40px;
-  font-family: var(--font-text);
-  white-space: nowrap;
-  top: -4px;
-  left: -8px;
-  position: absolute;
-  display: block;
-}
-
-input[type="checkbox"]:not(:checked)::after {
-  content: "[  ]";
-  color: var(--text-normal);
-}
-
-input[type="checkbox"]:checked::after {
-  content: "[x]";
-  color: var(--checklist-done-color);
-}
-
-/* List item styling */
-.list-bullet {
-  color: var(--list-marker-color);
-}
-
-.list-bullet::after {
-  display: none;
-}
-
-.markdown-rendered ul.has-list-bullet {
-  list-style-type: "- ";
-}
-
-.markdown-rendered ul.has-list-bullet > li::marker {
-  color: var(--list-marker-color);
-}
-
-/* Opaque modal backgrounds */
-.prompt {
-  background-color: var(--background-secondary);
-}
-
+/* Opaque background fix */
+.prompt,
+.popover,
+.suggestion,
 .vertical-tab-content {
-  background-color: var(--background-secondary);
+  background-color: var(--modal-background);
 }
 
 /* Fix titlebar draggability */

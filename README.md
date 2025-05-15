@@ -1,28 +1,22 @@
-# Apex Obsidian Theme
+# 🔮 Meridian
+
+A sleek and minimal theme for Obsidian.
 
 ![](./docs/cover.png)
 
-A simple, distraction free theme for [Obsidian](https://www.obsidian.md), crafted by [Sid](https://www.sid.me) and [Vignesh](https://twitter.com/c_m_vignesh) for folks who:
+A nice looking minimal theme for [Obsidian](https://obsidian.md),
 
-1. prefer simpler things
-2. love monospaced type
-3. use hotkeys to navigate
+## Issues & Feature Requests
 
-If you're comfortable with Vim keybinds, you can absolutely fly through the UI and type away at the speed of thought! It currently works best on macOS but if you run into issues on your platform, please raise them with us and we'd love to help.
-
-## Issues / Feature Requests
-
-This [Github repo](https://www.github.com/clearlysid/apex) is the best place to raise something to us. Alternatively, you can send an email to **siddharth99c@gmail.com**.
+If you've encountered any issues or have any feature requests feel free to [create an issue](https://github.com/mvahaste/meridian/issues/new/choose) or [open a pull request](https://github.com/mvahaste/meridian/compare).
 
 ## Development Guide
 
-1. Clone this repo
-2. Remove the `.example` from the `.env.example` and provide the path to your Obsidian vault
-3. Run `npm i` to install all dependencies
-4. Run `npm start` to "watch" all `src/*.css` files and compile the theme with hot reloads.
+1. Fork or clone this repository.
+2. Create a `.env` file in the root directory of the repository with `.env.example` as a template.
+3. Run `npm install` to install all dependencies
+4. Run `npm start` to compile the theme into your Obsidian themes directory and watch for changes.
 
 ## Acknowledgements
 
-- We used the [Obsidian Sample Theme](https://github.com/obsidianmd/obsidian-sample-theme) as a starting point.
-- The CSS build process is based on [Minimal Theme](https://github.com/kepano/obsidian-minimal).
-- Typeset in the beautiful [Geist and Geist Mono](https://vercel.com/font) by Vercel.
+- Forked from the [Apex](https://github.com/clearlysid/apex) theme.
