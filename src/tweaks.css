@@ -29,3 +29,8 @@
 .view-header-title-container {
   -webkit-app-region: drag;
 }
+
+/* Fix not being able to click on the elements inside the titlebar */
+.view-header-title-container div {
+  -webkit-app-region: no-drag;
+}
