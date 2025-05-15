@@ -1,4 +1,4 @@
-# 🔮 Meridian
+# 🌅 Meridian
 
 A sleek and minimal theme for Obsidian.
 
