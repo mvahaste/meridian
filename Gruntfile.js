@@ -1,6 +1,6 @@
 /* 
 Minimal Theme compiler for Obsidian
-Tweaked for Apex by @clearlysid
+Tweaked for Meridian
 
 MIT License
 Copyright (c) 2020-2021 Stephan Ango (@kepano)
@@ -40,12 +40,12 @@ module.exports = function (grunt) {
         expand: true,
         src: "theme.css",
         dest: process.env.HOME + process.env.OBSIDIAN_PATH,
-        rename: (dest, src) => dest + "Apex/theme.css",
+        rename: (dest, src) => dest + "Meridian/theme.css",
       },
       manifest: {
         expand: true,
         src: "manifest.json",
-        dest: process.env.HOME + process.env.OBSIDIAN_PATH + "Apex/",
+        dest: process.env.HOME + process.env.OBSIDIAN_PATH + "Meridian/",
       },
     },
 
