@@ -39,13 +39,15 @@ module.exports = function (grunt) {
       local: {
         expand: true,
         src: "theme.css",
-        dest: process.env.GLOBAL_OBSIDIAN_THEMES_PATH,
-        rename: (dest, src) => dest + "Meridian/theme.css",
+        dest: "<%= GLOBAL_OBSIDIAN_THEMES_PATH %>",
+        rename: function (dest, src) {
+          return dest + "Meridian/theme.css";
+        },
       },
       manifest: {
         expand: true,
         src: "manifest.json",
-        dest: process.env.GLOBAL_OBSIDIAN_THEMES_PATH + "Meridian/",
+        dest: "<%= GLOBAL_OBSIDIAN_THEMES_PATH %>Meridian/",
       },
     },
 
@@ -62,10 +64,15 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.registerTask("loadconst", "Load constants", function () {
-    grunt.config(
-      "GLOBAL_OBSIDIAN_THEMES_PATH",
-      process.env.GLOBAL_OBSIDIAN_THEMES_PATH,
-    );
+    const themesPath = process.env.GLOBAL_OBSIDIAN_THEMES_PATH;
+
+    if (!themesPath || themesPath === "undefined") {
+      grunt.fail.fatal(
+        "GLOBAL_OBSIDIAN_THEMES_PATH is not defined. Please set it in your .env file.",
+      );
+    }
+
+    grunt.config("GLOBAL_OBSIDIAN_THEMES_PATH", themesPath);
   });
   grunt.registerTask("default", [
     "env:local", // Load environment variables
