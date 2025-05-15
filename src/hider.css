@@ -1,88 +1,88 @@
 /* Hide vault name */
 .nav-folder.mod-root > .nav-folder-title {
-	display: none;
+  display: none;
 }
 
 /* Hide tabs */
 .mod-root .workspace-tabs .workspace-tab-header-container {
-	display: none;
+  display: none;
 }
 
 /* Hide sidebar buttons */
 .sidebar-toggle-button.mod-right,
 .sidebar-toggle-button.mod-left {
-	display: none;
+  display: none;
 }
 
 .mod-macos.is-hidden-frameless:not(.is-popout-window)
-	.workspace
-	.workspace-tabs.mod-top-right-space
-	.workspace-tab-header-container {
-	padding-right: 4px;
+  .workspace
+  .workspace-tabs.mod-top-right-space
+  .workspace-tab-header-container {
+  padding-right: 4px;
 }
 
 /* Hide ribbon */
 .mod-macos.is-hidden-frameless:not(.is-fullscreen):not(.is-popout-window)
-	.workspace-tabs.mod-top-left-space
-	.workspace-tab-header-container {
-	padding-left: calc(var(--frame-left-space) + var(--ribbon-width));
+  .workspace-tabs.mod-top-left-space
+  .workspace-tab-header-container {
+  padding-left: calc(var(--frame-left-space) + var(--ribbon-width));
 }
 
 .workspace-ribbon.mod-left {
-	display: none;
+  display: none;
 }
 .workspace-ribbon.mod-right {
-	visibility: hidden;
-	position: absolute;
+  visibility: hidden;
+  position: absolute;
 }
 .workspace-split.mod-right-split {
-	margin-right: 0;
+  margin-right: 0;
 }
 .workspace-split.mod-left-split {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 /* Hide meta */
 .markdown-reading-view .metadata-container {
-	display: none;
+  display: none;
 }
 
 /* Hide scrollbars */
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 /* Hide tooltips */
 .tooltip {
-	display: none;
+  display: none;
 }
 
 /* Hide search suggestions */
 .suggestion-container.mod-search-suggestion {
-	display: none;
+  display: none;
 }
 
 /* Hide search count flair */
 .tree-item-flair:not(.tag-pane-tag-count) {
-	display: none;
+  display: none;
 }
 
 /* Hide instructions */
 .prompt-instructions {
-	display: none;
+  display: none;
 }
 
 /* Hide file nav header */
 .workspace-leaf-content[data-type="file-explorer"] .nav-header {
-	display: none;
+  display: none;
 }
 
 /* Hide left panel header icons */
 .mod-top-left-space .workspace-tab-header-container-inner {
-	display: none;
+  display: none;
 }
 
 /* Hide nav buttons */
 .view-header-nav-buttons {
-	display: none;
+  display: none;
 }

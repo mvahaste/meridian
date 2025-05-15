@@ -23,6 +23,6 @@ This [Github repo](https://www.github.com/clearlysid/apex) is the best place to 
 
 ## Acknowledgements
 
--   We used the [Obsidian Sample Theme](https://github.com/obsidianmd/obsidian-sample-theme) as a starting point.
--   The CSS build process is based on [Minimal Theme](https://github.com/kepano/obsidian-minimal).
--   Typeset in the beautiful [Geist and Geist Mono](https://vercel.com/font) by Vercel.
+- We used the [Obsidian Sample Theme](https://github.com/obsidianmd/obsidian-sample-theme) as a starting point.
+- The CSS build process is based on [Minimal Theme](https://github.com/kepano/obsidian-minimal).
+- Typeset in the beautiful [Geist and Geist Mono](https://vercel.com/font) by Vercel.

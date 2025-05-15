@@ -1,17 +1,17 @@
 /* Desaturate and fade status bar */
 .status-bar {
-	filter: saturate(0);
-	opacity: 0.5;
-	border: none;
+  filter: saturate(0);
+  opacity: 0.5;
+  border: none;
 }
 
 /* Header padding and letter-spacing */
 .cm-header {
-	letter-spacing: 0.002em;
+  letter-spacing: 0.002em;
 }
 
 .HyperMD-header-3 {
-	padding-bottom: 0.4em !important;
+  padding-bottom: 0.4em !important;
 }
 
 /* Link styling */
@@ -20,66 +20,66 @@
 .cm-underline,
 .markdown-source-view.mod-cm6 .cm-underline,
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-	text-decoration-style: dotted;
-	text-decoration-color: var(--text-muted);
-	text-underline-offset: 0.3em;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 0.3em;
 }
 
 /* Checkbox styling */
 input[type="checkbox"] {
-	border: 0;
+  border: 0;
 }
 
 input[type="checkbox"]:checked::after,
 input[type="checkbox"]:not(:checked)::after {
-	-webkit-mask-image: none;
-	font-size: var(--font-text-size);
-	width: 40px;
-	font-family: var(--font-text);
-	white-space: nowrap;
-	top: -4px;
-	left: -8px;
-	position: absolute;
-	display: block;
+  -webkit-mask-image: none;
+  font-size: var(--font-text-size);
+  width: 40px;
+  font-family: var(--font-text);
+  white-space: nowrap;
+  top: -4px;
+  left: -8px;
+  position: absolute;
+  display: block;
 }
 
 input[type="checkbox"]:not(:checked)::after {
-	content: "[  ]";
-	color: var(--text-normal);
+  content: "[  ]";
+  color: var(--text-normal);
 }
 
 input[type="checkbox"]:checked::after {
-	content: "[x]";
-	color: var(--checklist-done-color);
+  content: "[x]";
+  color: var(--checklist-done-color);
 }
 
 /* List item styling */
 .list-bullet {
-	color: var(--list-marker-color);
+  color: var(--list-marker-color);
 }
 
 .list-bullet::after {
-	display: none;
+  display: none;
 }
 
 .markdown-rendered ul.has-list-bullet {
-	list-style-type: "- ";
+  list-style-type: "- ";
 }
 
 .markdown-rendered ul.has-list-bullet > li::marker {
-	color: var(--list-marker-color);
+  color: var(--list-marker-color);
 }
 
 /* Opaque modal backgrounds */
 .prompt {
-	background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
 .vertical-tab-content {
-	background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
 /* Fix titlebar draggability */
 .view-header-title-container {
-	-webkit-app-region: drag;
+  -webkit-app-region: drag;
 }
