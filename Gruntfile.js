@@ -17,7 +17,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
 
-    /* Get the user-defined OBSIDIAN_PATH from .env file 
+    /* Get the user-defined GLOBAL_OBSIDIAN_THEMES_PATH from .env file 
 			 so that we can live reload the theme in the vault */
     env: {
       local: {
@@ -39,13 +39,13 @@ module.exports = function (grunt) {
       local: {
         expand: true,
         src: "theme.css",
-        dest: process.env.HOME + process.env.OBSIDIAN_PATH,
+        dest: process.env.GLOBAL_OBSIDIAN_THEMES_PATH,
         rename: (dest, src) => dest + "Meridian/theme.css",
       },
       manifest: {
         expand: true,
         src: "manifest.json",
-        dest: process.env.HOME + process.env.OBSIDIAN_PATH + "Meridian/",
+        dest: process.env.GLOBAL_OBSIDIAN_THEMES_PATH + "Meridian/",
       },
     },
 
@@ -62,7 +62,16 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.registerTask("loadconst", "Load constants", function () {
-    grunt.config("OBSIDIAN_PATH", process.env.OBSIDIAN_PATH);
+    grunt.config(
+      "GLOBAL_OBSIDIAN_THEMES_PATH",
+      process.env.GLOBAL_OBSIDIAN_THEMES_PATH,
+    );
   });
-  grunt.registerTask("default", ["env:local", "loadconst", "watch"]);
+  grunt.registerTask("default", [
+    "env:local", // Load environment variables
+    "loadconst", // Load constants into grunt config
+    "concat_css", // Concatenate CSS files
+    "copy", // Copy the output to the theme path
+    "watch", // Start watching for changes
+  ]);
 };
