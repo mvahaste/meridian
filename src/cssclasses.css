@@ -1,51 +1,68 @@
-/* Apply filters to images */
+/* Invert images */
 .images-invert img {
   filter: invert(1);
 }
 
+/* Grayscale images */
 .images-grayscale img {
   filter: grayscale(1);
 }
 
+/* Blur images */
+.images-blur-sm img,
+.images-blur-md img,
+.images-blur-lg img {
+  transition: all 0.3s ease;
+}
+
+.images-blur-sm img:hover,
+.images-blur-md img:hover,
+.images-blur-lg img:hover {
+  filter: blur(0);
+}
+
+.images-blur-sm img {
+  filter: blur(5px);
+}
+
+.images-blur-md img {
+  filter: blur(10px);
+}
+
+.images-blur-lg img {
+  filter: blur(15px);
+}
+
+/* Make images square (remove rounded corners) */
+.images-square img {
+  border-radius: 0;
+}
+
 /* Scale images on hover */
-.images-hover-scale-105 img,
-.images-hover-scale-110 img,
-.images-hover-scale-115 img,
-.images-hover-scale-120 img,
-.images-hover-scale-125 img,
-.images-hover-scale-150 img,
-.images-hover-scale-200 img {
-  transition: transform 0.3s ease;
+.images-hover-scale-xs img,
+.images-hover-scale-sm img,
+.images-hover-scale-md img,
+.images-hover-scale-lg img,
+.images-hover-scale-xl img {
+  transition: all 0.3s ease;
 }
 
-.images-hover-scale-105 img:hover {
-  transform: scale(1.05);
-}
-
-.images-hover-scale-110 img:hover {
+.images-hover-scale-xs img:hover {
   transform: scale(1.1);
 }
 
-.images-hover-scale-115 img:hover {
-  transform: scale(1.15);
-}
-
-.images-hover-scale-120 img:hover {
+.images-hover-scale-sm img:hover {
   transform: scale(1.2);
 }
 
-.images-hover-scale-125 img:hover {
-  transform: scale(1.25);
+.images-hover-scale-md img:hover {
+  transform: scale(1.3);
 }
 
-.images-hover-scale-150 img:hover {
+.images-hover-scale-lg img:hover {
+  transform: scale(1.4);
+}
+
+.images-hover-scale-xl img:hover {
   transform: scale(1.5);
-}
-
-.images-hover-scale-200 img:hover {
-  transform: scale(2);
-}
-
-.images-square img {
-  border-radius: 0;
 }

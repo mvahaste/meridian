@@ -13,6 +13,11 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
   - Dynamically hides the tab bar when only one tab is open.
   - Grayscale file properties unless hovered.
   - Other small tweaks to reduce clutter.
+- Optional CSS snippets you can apply on a note-by-note basis with the `cssclasses` file property.
+  - `images-invert` - Inverts images.
+  - `images-grayscale` - Grayscales images.
+  - `images-blur-[sm|md|lg]` - Blurs images unless hovered.
+  - `images-hover-scale-[xs|sm|md|lg|xl]` - Scales images on hover.
 - Supports both light and dark modes.
 - Uses your Obsidian font settings, no annoying font overrides.
 
