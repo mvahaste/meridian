@@ -266,7 +266,7 @@ body {
 }
 
 .theme-dark {
-  --background-primary: transparent;
+  --background-primary: #111111;
   --background-secondary: #141414;
   --text-normal: #ccc;
   --text-muted: #707070;
@@ -274,6 +274,13 @@ body {
 
 .theme-dark.is-fullscreen {
   --background-primary: #111111;
+}
+
+/* Transparency if not on Windows */
+/* I assume it works on Linux, might have to make macOS only if not */
+/* Right now it is anything that is not Windows */
+:not(.mod-windows).theme-dark {
+  --background-primary: transparent;
 }
 /* Desaturate and fade status bar */
 .status-bar {
