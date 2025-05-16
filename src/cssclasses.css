@@ -30,6 +30,11 @@
   filter: grayscale(1);
 }
 
+/* Sepia images */
+.images-sepia img {
+  filter: sepia(1);
+}
+
 /* Blur images */
 .images-blur-sm img,
 .images-blur-md img,

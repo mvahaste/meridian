@@ -16,6 +16,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 - Optional CSS snippets you can apply on a note-by-note basis with the `cssclasses` file property.
   - `images-invert` - Inverts images.
   - `images-grayscale` - Grayscales images.
+  - `images-sepia` - Sepias images.
   - `images-blur-[sm|md|lg]` - Blurs images unless hovered.
   - `images-hover-scale-[xs|sm|md|lg|xl]` - Scales images on hover.
   - `text-[left|center|right|justify]` - Aligns text.
