@@ -19,6 +19,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
   - `images-blur-[sm|md|lg]` - Blurs images unless hovered.
   - `images-hover-scale-[xs|sm|md|lg|xl]` - Scales images on hover.
   - `text-[left|center|right|justify]` - Aligns text.
+  - `text-monospace` - Makes text monospace (uses the monospace font set in your Obsidian settings).
 - Supports both light and dark modes.
 - Uses your Obsidian font settings, no annoying font overrides.
 
