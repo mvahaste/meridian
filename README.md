@@ -11,7 +11,7 @@ For a more refined typographic feel, you can optionally use the [Lora](https://f
 ## Features
 
 - Hides clutter and distractions.
-  - No unnecessary icons in the sidebars---I do most things with keyboard shortcuts or the command palette.
+  - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
   - Dynamically hides the tab bar when only one tab is open.
   - Other small tweaks to reduce clutter.
 - Supports both light and dark modes.
