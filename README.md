@@ -8,6 +8,9 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 
 ## Features
 
+> [!NOTE]
+> Transparency is not supported on Windows.
+
 - Hides clutter and distractions.
   - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
   - Dynamically hides the tab bar when only one tab is open.
