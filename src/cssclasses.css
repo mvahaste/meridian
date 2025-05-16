@@ -104,30 +104,52 @@
 }
 
 /* Scale images on hover */
-.images-hover-scale-xs img,
-.images-hover-scale-sm img,
-.images-hover-scale-md img,
-.images-hover-scale-lg img,
-.images-hover-scale-xl img {
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xs img,
+.workspace-leaf-content[data-mode="source"] .images-hover-scale-xs .image-embed,
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-sm img,
+.workspace-leaf-content[data-mode="source"] .images-hover-scale-sm .image-embed,
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-md img,
+.workspace-leaf-content[data-mode="source"] .images-hover-scale-md .image-embed,
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-lg img,
+.workspace-leaf-content[data-mode="source"] .images-hover-scale-lg .image-embed,
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xl img,
+.workspace-leaf-content[data-mode="source"]
+  .images-hover-scale-xl
+  .image-embed {
   transition: all 0.3s ease;
 }
 
-.images-hover-scale-xs img:hover {
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xs img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .images-hover-scale-xs
+  .image-embed:hover {
   transform: scale(1.1);
 }
 
-.images-hover-scale-sm img:hover {
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-sm img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .images-hover-scale-sm
+  .image-embed:hover {
   transform: scale(1.2);
 }
 
-.images-hover-scale-md img:hover {
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-md img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .images-hover-scale-md
+  .image-embed:hover {
   transform: scale(1.3);
 }
 
-.images-hover-scale-lg img:hover {
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-lg img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .images-hover-scale-lg
+  .image-embed:hover {
   transform: scale(1.4);
 }
 
-.images-hover-scale-xl img:hover {
+.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xl img:hover,
+.workspace-leaf-content[data-mode="source"]
+  .images-hover-scale-xl
+  .image-embed:hover {
   transform: scale(1.5);
 }
