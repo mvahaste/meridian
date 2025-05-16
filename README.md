@@ -17,6 +17,12 @@ For a more refined typographic feel, you can optionally use the [Lora](https://f
 - Supports both light and dark modes.
 - Uses your Obsidian font settings, no annoying font overrides.
 
+### Optional
+
+These are optional CSS snippets you can use to customize your Obsidian further:
+
+- [header-font-lora.css](https://github.com/mvahaste/meridian/blob/master/header-font-lora.css) - Use the Lora font for headers.
+
 ## Issues & Feature Requests
 
 If you've encountered any issues or have any feature requests feel free to [create an issue](https://github.com/mvahaste/meridian/issues/new/choose) or [open a pull request](https://github.com/mvahaste/meridian/compare).
