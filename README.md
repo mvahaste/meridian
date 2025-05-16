@@ -8,6 +8,15 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 
 For a more refined typographic feel, you can optionally use the [Lora](https://fonts.google.com/specimen/Lora) font for your headers with the [header-font-lora.css](https://github.com/mvahaste/meridian/blob/master/header-font-lora.css) snippet, this is what I did in the screenshot.
 
+## Features
+
+- Hides clutter and distractions.
+  - No unnecessary icons in the sidebars---I do most things with keyboard shortcuts or the command palette.
+  - Dynamically hides the tab bar when only one tab is open.
+  - Other small tweaks to reduce clutter.
+- Supports both light and dark modes.
+- Uses your Obsidian font settings, no annoying font overrides.
+
 ## Issues & Feature Requests
 
 If you've encountered any issues or have any feature requests feel free to [create an issue](https://github.com/mvahaste/meridian/issues/new/choose) or [open a pull request](https://github.com/mvahaste/meridian/compare).
