@@ -58,44 +58,50 @@
   text-align: justify;
 }
 
-/* Invert images */
-.images-invert img {
-  filter: invert(1);
-}
-
-/* Grayscale images */
-.images-grayscale img {
-  filter: grayscale(1);
-}
-
-/* Sepia images */
-.images-sepia img {
-  filter: sepia(1);
-}
-
-/* Blur images */
+/* Image filters */
+.images-invert img,
+.images-grayscale img,
+.images-sepia img,
 .images-blur-sm img,
 .images-blur-md img,
 .images-blur-lg img {
   transition: all 0.3s ease;
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(var(--blur, 0));
 }
 
+.images-invert img:hover,
+.images-grayscale img:hover,
+.images-sepia img:hover,
 .images-blur-sm img:hover,
 .images-blur-md img:hover,
 .images-blur-lg img:hover {
-  filter: blur(0);
+  filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
+    invert(var(--invert, 0)) blur(0);
+}
+
+.images-invert img {
+  --invert: 1;
+}
+
+.images-grayscale img {
+  --grayscale: 1;
+}
+
+.images-sepia img {
+  --sepia: 1;
 }
 
 .images-blur-sm img {
-  filter: blur(5px);
+  --blur: 5px;
 }
 
 .images-blur-md img {
-  filter: blur(10px);
+  --blur: 10px;
 }
 
 .images-blur-lg img {
-  filter: blur(15px);
+  --blur: 15px;
 }
 
 /* Make images square (remove rounded corners) */
