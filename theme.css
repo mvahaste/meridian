@@ -1,9 +1,17 @@
-/* Monospace font */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                     Monospace font                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .font-monospace * {
   font-family: var(--font-monospace) !important;
 }
 
-/* Font weights */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Font weights                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .font-thin {
   font-weight: 100;
 }
@@ -28,7 +36,11 @@
   font-weight: 900;
 }
 
-/* Text cases */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text cases                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -41,7 +53,11 @@
   text-transform: capitalize;
 }
 
-/* Align text */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Text align                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .text-left {
   text-align: start;
 }
@@ -58,104 +74,114 @@
   text-align: justify;
 }
 
-/* Image filters */
-.images-invert img,
-.images-grayscale img,
-.images-sepia img,
-.images-blur-sm img,
-.images-blur-md img,
-.images-blur-lg img {
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Image filters                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-invert img,
+.image-grayscale img,
+.image-sepia img,
+.image-blur-sm img,
+.image-blur-md img,
+.image-blur-lg img {
   transition: all 0.3s ease;
   filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
     invert(var(--invert, 0)) blur(var(--blur, 0));
 }
 
-.images-invert img:hover,
-.images-grayscale img:hover,
-.images-sepia img:hover,
-.images-blur-sm img:hover,
-.images-blur-md img:hover,
-.images-blur-lg img:hover {
+.image-invert img:hover,
+.image-grayscale img:hover,
+.image-sepia img:hover,
+.image-blur-sm img:hover,
+.image-blur-md img:hover,
+.image-blur-lg img:hover {
   filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
     invert(var(--invert, 0)) blur(0);
 }
 
-.images-invert img {
+.image-invert img {
   --invert: 1;
 }
 
-.images-grayscale img {
+.image-grayscale img {
   --grayscale: 1;
 }
 
-.images-sepia img {
+.image-sepia img {
   --sepia: 1;
 }
 
-.images-blur-sm img {
+.image-blur-sm img {
   --blur: 5px;
 }
 
-.images-blur-md img {
+.image-blur-md img {
   --blur: 10px;
 }
 
-.images-blur-lg img {
+.image-blur-lg img {
   --blur: 15px;
 }
 
-/* Make images square (remove rounded corners) */
-.images-square img {
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Make images square (remove rounded corners)       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-square img {
   border-radius: 0;
 }
 
-/* Scale images on hover */
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xs img,
-.workspace-leaf-content[data-mode="source"] .images-hover-scale-xs .image-embed,
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-sm img,
-.workspace-leaf-content[data-mode="source"] .images-hover-scale-sm .image-embed,
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-md img,
-.workspace-leaf-content[data-mode="source"] .images-hover-scale-md .image-embed,
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-lg img,
-.workspace-leaf-content[data-mode="source"] .images-hover-scale-lg .image-embed,
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xl img,
-.workspace-leaf-content[data-mode="source"]
-  .images-hover-scale-xl
-  .image-embed {
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Scale images on hover                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xs .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-sm .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-md .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img,
+.workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed {
   transition: all 0.3s ease;
 }
 
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xs img:hover,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
 .workspace-leaf-content[data-mode="source"]
-  .images-hover-scale-xs
+  .image-hover-scale-xs
   .image-embed:hover {
   transform: scale(1.2);
 }
 
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-sm img:hover,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-sm img:hover,
 .workspace-leaf-content[data-mode="source"]
-  .images-hover-scale-sm
+  .image-hover-scale-sm
   .image-embed:hover {
   transform: scale(1.4);
 }
 
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-md img:hover,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-md img:hover,
 .workspace-leaf-content[data-mode="source"]
-  .images-hover-scale-md
+  .image-hover-scale-md
   .image-embed:hover {
   transform: scale(1.6);
 }
 
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-lg img:hover,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-lg img:hover,
 .workspace-leaf-content[data-mode="source"]
-  .images-hover-scale-lg
+  .image-hover-scale-lg
   .image-embed:hover {
   transform: scale(1.8);
 }
 
-.workspace-leaf-content[data-mode="preview"] .images-hover-scale-xl img:hover,
+.workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img:hover,
 .workspace-leaf-content[data-mode="source"]
-  .images-hover-scale-xl
+  .image-hover-scale-xl
   .image-embed:hover {
   transform: scale(2);
 }
