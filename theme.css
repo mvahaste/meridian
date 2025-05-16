@@ -1,3 +1,54 @@
+/* Apply filters to images */
+.images-invert img {
+  filter: invert(1);
+}
+
+.images-grayscale img {
+  filter: grayscale(1);
+}
+
+/* Scale images on hover */
+.images-hover-scale-105 img,
+.images-hover-scale-110 img,
+.images-hover-scale-115 img,
+.images-hover-scale-120 img,
+.images-hover-scale-125 img,
+.images-hover-scale-150 img,
+.images-hover-scale-200 img {
+  transition: transform 0.3s ease;
+}
+
+.images-hover-scale-105 img:hover {
+  transform: scale(1.05);
+}
+
+.images-hover-scale-110 img:hover {
+  transform: scale(1.1);
+}
+
+.images-hover-scale-115 img:hover {
+  transform: scale(1.15);
+}
+
+.images-hover-scale-120 img:hover {
+  transform: scale(1.2);
+}
+
+.images-hover-scale-125 img:hover {
+  transform: scale(1.25);
+}
+
+.images-hover-scale-150 img:hover {
+  transform: scale(1.5);
+}
+
+.images-hover-scale-200 img:hover {
+  transform: scale(2);
+}
+
+.images-square img {
+  border-radius: 0;
+}
 /* Hide vault name */
 .nav-folder.mod-root > .nav-folder-title {
   display: none;
