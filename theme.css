@@ -1,6 +1,6 @@
 /* Monospace font */
-.font-monospace {
-  font-family: var(--font-monospace);
+.font-monospace * {
+  font-family: var(--font-monospace) !important;
 }
 
 /* Font weights */
