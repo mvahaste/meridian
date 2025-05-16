@@ -1,6 +1,31 @@
 /* Monospace font */
-.text-monospace {
+.font-monospace {
   font-family: var(--font-monospace);
+}
+
+/* Font weights */
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 /* Align text */
