@@ -3,9 +3,21 @@
   display: none;
 }
 
-/* Hide tabs */
+/* Hide tabs when only one tab is open (with transition) */
 .mod-root .workspace-tabs .workspace-tab-header-container {
-  display: none;
+  max-height: 100px; /* adjust to expected height */
+  opacity: 1;
+  overflow: hidden;
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease;
+}
+
+.mod-root
+  .workspace-tabs:not(:has(.workspace-tab-header:nth-of-type(2)))
+  .workspace-tab-header-container {
+  max-height: 0;
+  opacity: 0;
 }
 
 /* Hide sidebar buttons */
@@ -49,11 +61,6 @@
 
 /* Hide scrollbars */
 ::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide tooltips */
-.tooltip {
   display: none;
 }
 
