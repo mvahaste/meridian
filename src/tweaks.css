@@ -5,6 +5,20 @@
   border: none;
 }
 
+/* Grayscale and lower the contrast of file properties when not hovered */
+.metadata-container {
+  filter: grayscale(100%) contrast(0);
+  opacity: 0.35;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.metadata-container:hover {
+  filter: grayscale(0) contrast(1);
+  opacity: 1;
+}
+
 /* Link styling */
 .cm-s-obsidian span.cm-hmd-internal-link:hover,
 .cm-s-obsidian span.cm-url,
