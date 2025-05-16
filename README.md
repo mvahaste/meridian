@@ -26,6 +26,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
   - `text-[uppercase|lowercase|capitalize]` - Changes text case.
   - `font-monospace` - Makes text use your monospace font.
   - `font-[thin|light|regular|medium|bold|black]` - Makes text a specific weight.
+  - I recommend creating a note with all the CSS classses applied so you get suggestions for them ([example](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md)).
 - Supports both light and dark modes.
 - Uses your Obsidian font settings, no annoying font overrides.
 
@@ -33,8 +34,8 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 
 These are optional CSS snippets you can use to customize your Obsidian further:
 
-- [header-font-lora.css](https://github.com/mvahaste/meridian/blob/master/header-font-lora.css) - Use the Lora font for headers.
-- [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/master/minimal-image-captions.css) - Use a minimal style for image captions (requires the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin).
+- [header-font-lora.css](https://github.com/mvahaste/meridian/blob/main/header-font-lora.css) - Use the Lora font for headers.
+- [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/main/minimal-image-captions.css) - Use a minimal style for image captions (requires the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin).
 
 ## Issues & Feature Requests
 
