@@ -84,9 +84,16 @@
   display: none;
 }
 
-/* Hide left panel header icons */
-.mod-top-left-space .workspace-tab-header-container-inner {
-  display: none;
+/* Hide left panel header icons unless hovered */
+.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header-container-inner:hover {
+  opacity: 1;
 }
 
 /* Hide nav buttons */
