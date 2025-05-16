@@ -1,0 +1,9 @@
+.image-captions-figure {
+  background-color: transparent !important;
+}
+
+.image-captions-caption {
+  background-color: transparent !important;
+  font-size: 0.8em !important;
+  text-align: left !important;
+}

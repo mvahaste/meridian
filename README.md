@@ -20,6 +20,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 These are optional CSS snippets you can use to customize your Obsidian further:
 
 - [header-font-lora.css](https://github.com/mvahaste/meridian/blob/master/header-font-lora.css) - Use the Lora font for headers.
+- [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/master/minimal-image-captions.css) - Use a minimal style for image captions (requires the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin).
 
 ## Issues & Feature Requests
 
