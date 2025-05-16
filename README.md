@@ -11,6 +11,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 - Hides clutter and distractions.
   - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
   - Dynamically hides the tab bar when only one tab is open.
+  - Grayscale file properties unless hovered.
   - Other small tweaks to reduce clutter.
 - Supports both light and dark modes.
 - Uses your Obsidian font settings, no annoying font overrides.
