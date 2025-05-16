@@ -123,33 +123,33 @@
 .workspace-leaf-content[data-mode="source"]
   .images-hover-scale-xs
   .image-embed:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .workspace-leaf-content[data-mode="preview"] .images-hover-scale-sm img:hover,
 .workspace-leaf-content[data-mode="source"]
   .images-hover-scale-sm
   .image-embed:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 .workspace-leaf-content[data-mode="preview"] .images-hover-scale-md img:hover,
 .workspace-leaf-content[data-mode="source"]
   .images-hover-scale-md
   .image-embed:hover {
-  transform: scale(1.3);
+  transform: scale(1.6);
 }
 
 .workspace-leaf-content[data-mode="preview"] .images-hover-scale-lg img:hover,
 .workspace-leaf-content[data-mode="source"]
   .images-hover-scale-lg
   .image-embed:hover {
-  transform: scale(1.4);
+  transform: scale(1.8);
 }
 
 .workspace-leaf-content[data-mode="preview"] .images-hover-scale-xl img:hover,
 .workspace-leaf-content[data-mode="source"]
   .images-hover-scale-xl
   .image-embed:hover {
-  transform: scale(1.5);
+  transform: scale(2);
 }
