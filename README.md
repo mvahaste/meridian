@@ -26,7 +26,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
   - `text-[uppercase|lowercase|capitalize]` - Changes text case.
   - `font-monospace` - Makes text use your monospace font.
   - `font-[thin|light|regular|medium|bold|black]` - Makes text a specific weight.
-  - I recommend creating a note with all the CSS classses applied so you get suggestions for them ([example](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md)).
+  - I recommend creating a [note](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md) with all the CSS classses applied so you get suggestions for them.
 - Supports both light and dark modes.
 - Uses your Obsidian font settings, no annoying font overrides.
 
