@@ -1,0 +1,31 @@
+---
+cssclasses:
+  - font-monospace
+  - font-thin
+  - font-light
+  - font-normal
+  - font-medium
+  - font-bold
+  - font-black
+  - text-uppercase
+  - text-lowercase
+  - text-capitalize
+  - text-left
+  - text-right
+  - text-center
+  - text-justify
+  - image-invert
+  - image-grayscale
+  - image-sepia
+  - image-blur-sm
+  - image-blur-md
+  - image-blur-lg
+  - image-square
+  - image-hover-scale-xs
+  - image-hover-scale-sm
+  - image-hover-scale-md
+  - image-hover-scale-lg
+  - image-hover-scale-xl
+---
+
+# CSS Class Suggestions
