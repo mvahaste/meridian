@@ -4,9 +4,7 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 ![Meridian Theme Screenshot](./docs/cover.png)
 
-The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), but the theme uses whatever font and font size you've set in your Obsidian settings.
-
-For a more refined typographic feel, you can optionally use the [Lora](https://fonts.google.com/specimen/Lora) font for your headers with the [header-font-lora.css](https://github.com/mvahaste/meridian/blob/master/header-font-lora.css) snippet, this is what I did in the screenshot.
+The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), but the theme uses whatever font and font size you've set in your Obsidian settings. I also use a CSS snippet to make the headers use the [Lora](https://fonts.google.com/specimen/Lora) font.
 
 ## Features
 
