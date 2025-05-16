@@ -1,3 +1,20 @@
+/* Align text */
+.text-left {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 /* Invert images */
 .images-invert img {
   filter: invert(1);
