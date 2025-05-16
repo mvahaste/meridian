@@ -16,6 +16,11 @@
   text-underline-offset: 0.3em;
 }
 
+/* Image rounded corners */
+img {
+  border-radius: 0.5em;
+}
+
 /* Transparent background fix */
 .prompt,
 .popover,
