@@ -5,7 +5,7 @@
 
 /* Hide tabs when only one tab is open (with transition) */
 .mod-root .workspace-tabs .workspace-tab-header-container {
-  max-height: 100px; /* adjust to expected height */
+  max-height: 3em;
   opacity: 1;
   overflow: hidden;
   transition:
