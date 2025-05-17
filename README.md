@@ -17,11 +17,11 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
   - Grayscale file properties unless hovered.
   - Other small tweaks to reduce clutter.
 - Optional CSS rules you can apply on a note-by-note basis with the `cssclasses` file property.
-  - `images-invert` - Inverts images.
-  - `images-grayscale` - Grayscales images.
-  - `images-sepia` - Sepias images.
-  - `images-blur-[sm|md|lg]` - Blurs images unless hovered.
-  - `images-hover-scale-[xs|sm|md|lg|xl]` - Scales images on hover.
+  - `image-invert` - Inverts images.
+  - `image-grayscale` - Grayscales images.
+  - `image-sepia` - Sepias images.
+  - `image-blur-[sm|md|lg]` - Blurs images unless hovered.
+  - `image-hover-scale-[xs|sm|md|lg|xl]` - Scales images on hover.
   - `text-[left|center|right|justify]` - Aligns text.
   - `text-[uppercase|lowercase|capitalize]` - Changes text case.
   - `font-monospace` - Makes text use your monospace font.
