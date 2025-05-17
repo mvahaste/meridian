@@ -1,6 +1,8 @@
 name: Publish new theme version
 
 on:
+  # Manual trigger
+  workflow_dispatch:
   push:
     # Sequence of patterns matched against refs/tags
     tags:
