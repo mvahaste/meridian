@@ -261,6 +261,31 @@
 .view-header-nav-buttons {
   display: none;
 }
+
+/* Hide tags, links, backlinks and outline nav headers unless hovered */
+.workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="backlink"] .nav-header,
+.workspace-split .workspace-leaf-content[data-type="outline"] .nav-header {
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s ease;
+}
+
+.workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="outgoing-link"]
+  .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="backlink"]
+  .nav-header,
+.workspace-split:hover
+  .workspace-leaf-content[data-type="outline"]
+  .nav-header {
+  opacity: 1;
+  height: 1.75em;
+}
 /* Obsidian Variables */
 body {
   /* Bigger headers */
