@@ -39,7 +39,9 @@ These are optional CSS snippets you can use to customize your Obsidian further:
 
 ## Issues & Feature Requests
 
-If you've encountered any issues or have any feature requests feel free to [create an issue](https://github.com/mvahaste/meridian/issues/new/choose) or [open a pull request](https://github.com/mvahaste/meridian/compare).
+If you find a bug or want to request a feature feel free to open an issue or submit a pull request.
+
+I'm mainly developing this theme for myself but I'll try to address any issues or requests to the best of my ability.
 
 ## Development Guide
 
