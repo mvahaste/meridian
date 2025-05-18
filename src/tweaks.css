@@ -5,7 +5,8 @@
   border: none;
 }
 
-/* Grayscale and lower the contrast of file properties when not hovered */
+/* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
+.embedded-backlinks,
 .metadata-container {
   filter: grayscale(100%) contrast(0);
   opacity: 0.35;
@@ -14,6 +15,8 @@
     opacity 0.3s ease;
 }
 
+.embedded-backlinks:hover,
+.embedded-backlinks:focus-within,
 .metadata-container:hover,
 .metadata-container:focus-within {
   filter: grayscale(0) contrast(1);
