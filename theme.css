@@ -230,11 +230,6 @@
   display: none;
 }
 
-/* Hide search suggestions */
-.suggestion-container.mod-search-suggestion {
-  display: none;
-}
-
 /* Hide search count flair */
 .tree-item-flair:not(.tag-pane-tag-count) {
   display: none;
