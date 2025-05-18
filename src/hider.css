@@ -130,3 +130,13 @@
   [data-type="localgraph"] {
   opacity: 1;
 }
+
+/* Hide graph controls unless hovered */
+.workspace-tab-container .graph-controls {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-tab-container:hover .graph-controls {
+  opacity: 1;
+}
