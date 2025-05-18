@@ -102,7 +102,6 @@
 
 /* Hide vault switcher unless hovered */
 .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
-  order: 1;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -111,4 +110,9 @@
 .workspace-sidedock-vault-profile
   .workspace-drawer-vault-switcher.has-active-menu {
   opacity: 1;
+}
+
+/* Hide vault actions (help, settings) */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+  display: none !important;
 }
