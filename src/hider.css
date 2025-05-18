@@ -33,27 +33,6 @@
   padding-right: 4px;
 }
 
-/* Hide ribbon */
-.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(.is-popout-window)
-  .workspace-tabs.mod-top-left-space
-  .workspace-tab-header-container {
-  padding-left: calc(var(--frame-left-space) + var(--ribbon-width));
-}
-
-.workspace-ribbon.mod-left {
-  display: none;
-}
-.workspace-ribbon.mod-right {
-  visibility: hidden;
-  position: absolute;
-}
-.workspace-split.mod-right-split {
-  margin-right: 0;
-}
-.workspace-split.mod-left-split {
-  margin-left: 0;
-}
-
 /* Hide meta */
 .markdown-reading-view .metadata-container {
   display: none;
