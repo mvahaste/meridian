@@ -376,7 +376,8 @@ body {
     opacity 0.3s ease;
 }
 
-.metadata-container:hover {
+.metadata-container:hover,
+.metadata-container:focus-within {
   filter: grayscale(0) contrast(1);
   opacity: 1;
 }
