@@ -26,6 +26,9 @@ cssclasses:
   - image-hover-scale-md
   - image-hover-scale-lg
   - image-hover-scale-xl
+  - image-left
+  - image-center
+  - image-right
 ---
 
 # CSS Class Suggestions

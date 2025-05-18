@@ -76,6 +76,26 @@
 
 /*
  * ╭─────────────────────────────────────────────────────────╮
+ * │                       Image align                       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.image-center .image-embed {
+  display: flex !important;
+  justify-content: center;
+}
+
+.image-left .image-embed {
+  display: flex !important;
+  justify-content: start;
+}
+
+.image-right .image-embed {
+  display: flex !important;
+  justify-content: end;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
  * │                      Image filters                      │
  * ╰─────────────────────────────────────────────────────────╯
 */
