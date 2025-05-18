@@ -116,3 +116,17 @@
 .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
   display: none !important;
 }
+
+/* Hide local graph header unless hovered */
+.workspace-tab-header-container
+  .workspace-tab-header-container-inner
+  [data-type="localgraph"] {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-tab-header-container:hover
+  .workspace-tab-header-container-inner
+  [data-type="localgraph"] {
+  opacity: 1;
+}
