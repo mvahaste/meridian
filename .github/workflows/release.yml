@@ -19,7 +19,7 @@ jobs:
           tag="${GITHUB_REF#refs/tags/}"
 
           gh release create "$tag" \
-            --title="$tag" \
+            --title="Meridian $tag" \
             --generate-notes \
             --draft \
             manifest.json theme.css
