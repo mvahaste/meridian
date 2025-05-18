@@ -27,7 +27,7 @@ body {
   --titlebar-background-focused: var(--background-primary);
   --checkbox-marker-color: var(--background-secondary);
   --modal-background: var(--background-secondary);
-  --divider-color: transparent;
+  --divider-color: transparent !important;
 }
 
 /* Basic Theme Colours */
