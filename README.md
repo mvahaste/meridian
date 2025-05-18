@@ -4,7 +4,7 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 ![Meridian Theme Screenshot](./docs/cover.png)
 
-The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), but the theme uses whatever font and font size you've set in your Obsidian settings. I also use a CSS snippet to make the headers use the [Lora](https://fonts.google.com/specimen/Lora) font.
+The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), but the theme uses whatever font and size you've set in your Obsidian settings. I also use a CSS snippet to make the headers use the [Lora](https://fonts.google.com/specimen/Lora) font.
 
 ## Features
 
@@ -14,7 +14,7 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 - Hides clutter and distractions.
   - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
   - Dynamically hides the tab bar when only one tab is open.
-  - Grayscale file properties unless hovered.
+  - Hide or de-emphasize various UI elements unless hovered/focused.
   - Other small tweaks to reduce clutter.
 - Optional CSS rules you can apply on a note-by-note basis with the `cssclasses` file property.
   - `image-invert` - Inverts images.
@@ -27,8 +27,8 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
   - `font-monospace` - Makes text use your monospace font.
   - `font-[thin|light|regular|medium|bold|black]` - Makes text a specific weight.
   - I recommend creating a [note](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md?plain=1) with all the CSS classses applied so you get suggestions for them.
-- Supports both light and dark modes.
-- Uses your Obsidian font settings, no annoying font overrides.
+- Supports both light and dark modes (way better in dark mode though).
+- Uses your Obsidian font settings, no annoying overrides.
 
 ### Snippets
 
