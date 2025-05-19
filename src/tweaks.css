@@ -45,7 +45,7 @@
 
 /* Image rounded corners */
 img {
-  border-radius: 0.5em;
+  border-radius: var(--radius-m);
 }
 
 /* Transparent background fix */
