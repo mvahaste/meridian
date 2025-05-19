@@ -105,7 +105,7 @@
 .image-blur-sm img,
 .image-blur-md img,
 .image-blur-lg img {
-  transition: all 0.3s ease;
+  transition: filter 0.3s ease;
   filter: grayscale(var(--grayscale, 0)) sepia(var(--sepia, 0))
     invert(var(--invert, 0)) blur(var(--blur, 0));
 }
@@ -168,7 +168,7 @@
 .workspace-leaf-content[data-mode="source"] .image-hover-scale-lg .image-embed,
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xl img,
 .workspace-leaf-content[data-mode="source"] .image-hover-scale-xl .image-embed {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .workspace-leaf-content[data-mode="preview"] .image-hover-scale-xs img:hover,
@@ -285,7 +285,10 @@
   padding: 0;
   opacity: 0;
   height: 0;
-  transition: all 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    height 0.3s ease,
+    padding 0.3s ease;
 }
 
 .workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,

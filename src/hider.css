@@ -78,7 +78,10 @@
   padding: 0;
   opacity: 0;
   height: 0;
-  transition: all 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    height 0.3s ease,
+    padding 0.3s ease;
 }
 
 .workspace-split:hover .workspace-leaf-content[data-type="tag"] .nav-header,
