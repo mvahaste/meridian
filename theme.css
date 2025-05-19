@@ -404,6 +404,15 @@ body {
   filter: saturate(0);
   opacity: 0.5;
   border: none;
+  transition:
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.status-bar:hover,
+.status-bar:focus-within {
+  filter: saturate(1);
+  opacity: 1;
 }
 
 /* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
