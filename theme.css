@@ -205,11 +205,6 @@
   .image-embed:hover {
   transform: scale(2);
 }
-/* Hide vault name */
-.nav-folder.mod-root > .nav-folder-title {
-  display: none;
-}
-
 /* Hide tabs when only one tab is open (with transition) */
 .mod-root .workspace-tabs .workspace-tab-header-container {
   max-height: 3em;
