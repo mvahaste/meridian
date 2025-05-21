@@ -206,7 +206,7 @@
   transform: scale(2);
 }
 /* Hide tabs when only one tab is open (with transition) */
-.mod-root .workspace-tabs .workspace-tab-header-container {
+.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
   max-height: 3em;
   opacity: 1;
   overflow: hidden;
@@ -216,7 +216,9 @@
 }
 
 .mod-root
-  .workspace-tabs:not(:has(.workspace-tab-header:nth-of-type(2)))
+  .workspace-tabs:not(.mod-stacked):not(
+    :has(.workspace-tab-header:nth-of-type(2))
+  )
   .workspace-tab-header-container {
   max-height: 0;
   opacity: 0;
