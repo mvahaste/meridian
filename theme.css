@@ -358,13 +358,13 @@ body {
   --h6-size: calc(var(--font-text-size) * 1);
 
   /* Taller lines */
-  --h1-line-height: 2;
-  --h2-line-height: 1.9;
-  --h3-line-height: 1.8;
-  --h4-line-height: 1.7;
-  --h5-line-height: 1.7;
-  --h6-line-height: 1.7;
-  --line-height-normal: 1.7;
+  --h1-line-height: 1.6;
+  --h2-line-height: 1.6;
+  --h3-line-height: 1.6;
+  --h4-line-height: 1.6;
+  --h5-line-height: 1.6;
+  --h6-line-height: 1.6;
+  --line-height-normal: 1.6;
 
   /* Link style */
   --link-decoration: underline;
