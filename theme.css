@@ -368,8 +368,8 @@ body {
 
   /* Link style */
   --link-decoration: underline;
-  --link-unresolved-decoration-color: var(--text-muted);
-  --link-external-decoration-color: var(--text-muted);
+  --link-unresolved-decoration-style: dotted;
+  --link-unresolved-decoration-color: var(----link-unresolved-color);
 
   /* Colors */
   --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
@@ -444,9 +444,7 @@ body {
 .cm-underline,
 .markdown-source-view.mod-cm6 .cm-underline,
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-  text-decoration-style: dotted;
-  text-decoration-color: var(--text-muted);
-  text-underline-offset: 0.3em;
+  text-underline-offset: 0.125em;
 }
 
 /* Image rounded corners */

@@ -38,9 +38,7 @@
 .cm-underline,
 .markdown-source-view.mod-cm6 .cm-underline,
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-  text-decoration-style: dotted;
-  text-decoration-color: var(--text-muted);
-  text-underline-offset: 0.3em;
+  text-underline-offset: 0.125em;
 }
 
 /* Image rounded corners */
