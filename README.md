@@ -35,9 +35,9 @@ The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google
 
 These are optional CSS snippets you can use to customize your Obsidian further:
 
-- [header-font-lora.css](https://github.com/mvahaste/meridian/blob/main/header-font-lora.css) - Use the Lora font for headers.
-- [header-hide-link-underline.css](https://github.com/mvahaste/meridian/blob/main/header-hide-link-underline.css) - Hide the underline on header links.
-- [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/main/minimal-image-captions.css) - Use a minimal style for image captions (requires the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin).
+- [header-font-lora.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-font-lora.css) - Use the Lora font for headers.
+- [header-hide-link-underline.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-hide-link-underline.css) - Hide the underline on header links.
+- [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/main/snippets/minimal-image-captions.css) - Use a minimal style for image captions (requires the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin).
 
 ## Issues & Feature Requests
 
