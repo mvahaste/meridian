@@ -34,7 +34,7 @@
 
 /* Image rounded corners */
 img {
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-s);
 }
 
 /* Transparent background fix */
