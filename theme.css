@@ -372,7 +372,7 @@ body {
   --link-unresolved-decoration-color: var(----link-unresolved-color);
 
   /* Colors */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.4);
   --titlebar-background-focused: var(--background-primary);
   --checkbox-marker-color: var(--background-secondary);
   --modal-background: var(--background-secondary);
