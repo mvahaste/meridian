@@ -4,12 +4,13 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 ![Meridian Theme Screenshot](./docs/cover.png)
 
-The font shown in the screenshot is [Atkinson Hyperlegible](https://fonts.google.com/specimen/Atkinson+Hyperlegible), but the theme uses whatever font and size you've set in your Obsidian settings. I also use a CSS snippet to make the headers use the [Lora](https://fonts.google.com/specimen/Lora) font.
+The font shown in the screenshot is [Atkinson Hyperlegible Next](https://fonts.google.com/specimen/Atkinson+Hyperlegible+Next), and I'm using a snippet to hide the link underline on the first heading in the note. I also use the minimal image captions snippet, but it's not shown in the screenshot.
 
 ## Features
 
-> [!NOTE]
-> Transparency is not supported on Windows.
+> [!IMPORTANT]
+> This is a macOS focused theme.
+> It should also work on Windows (blur not supported), but not sure about other platforms.
 
 - Hides clutter and distractions.
   - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
@@ -38,7 +39,6 @@ These are optional CSS snippets you can use to customize your Obsidian further:
 - [header-font-lora.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-font-lora.css) - I like having a serif font for headers, this snippet uses the [Lora](https://fonts.google.com/specimen/Lora) font for headers.
 - [header-hide-link-underline.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-hide-link-underline.css) - I make the first headings in my notes links to the note itself, this snippet hides the underline on those links unless hovered.
 - [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/main/snippets/minimal-image-captions.css) - I use the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin to add captions to images, this snippet makes them look nicer.
-- [blockquote-quotes.css](https://github.com/mvahaste/meridian/blob/main/snippets/blockquote-quotes.css) - I use the `<blockquote />` HTML element for a lot of my quotes, this snippet italicizes them and surrounds them with quotes.
 
 ## Issues & Feature Requests
 
