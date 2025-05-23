@@ -1,0 +1,13 @@
+blockquote::before {
+  content: open-quote;
+  margin-right: -0.25em;
+}
+
+blockquote::after {
+  content: close-quote;
+  margin-left: -0.25em;
+}
+
+blockquote {
+  font-style: italic;
+}

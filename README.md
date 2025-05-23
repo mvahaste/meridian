@@ -38,6 +38,7 @@ These are optional CSS snippets you can use to customize your Obsidian further:
 - [header-font-lora.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-font-lora.css) - I like having a serif font for headers, this snippet uses the [Lora](https://fonts.google.com/specimen/Lora) font for headers.
 - [header-hide-link-underline.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-hide-link-underline.css) - I make the first headings in my notes links to the note itself, this snippet hides the underline on those links unless hovered.
 - [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/main/snippets/minimal-image-captions.css) - I use the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin to add captions to images, this snippet makes them look nicer.
+- [blockquote-quotes.css](https://github.com/mvahaste/meridian/blob/main/snippets/blockquote-quotes.css) - I use the `<blockquote />` HTML element for a lot of my quotes, this snippet italicizes them and surrounds them with quotes.
 
 ## Issues & Feature Requests
 
