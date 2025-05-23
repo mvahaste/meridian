@@ -349,34 +349,38 @@
 }
 /* Obsidian Variables */
 body {
-  /* Bigger headers */
-  --h1-size: calc(var(--font-text-size) * 2);
-  --h2-size: calc(var(--font-text-size) * 1.6);
-  --h3-size: calc(var(--font-text-size) * 1.4);
-  --h4-size: calc(var(--font-text-size) * 1.2);
-  --h5-size: calc(var(--font-text-size) * 1.1);
-  --h6-size: calc(var(--font-text-size) * 1);
+  /* Typography */
+  --line-height-normal: 1.6;
 
-  /* Taller lines */
-  --h1-line-height: 1.7;
-  --h2-line-height: 1.7;
-  --h3-line-height: 1.7;
-  --h4-line-height: 1.7;
-  --h5-line-height: 1.7;
-  --h6-line-height: 1.7;
-  --line-height-normal: 1.7;
-
-  /* Link style */
+  /* Links */
   --link-decoration: underline;
   --link-unresolved-decoration-style: dotted;
   --link-unresolved-decoration-color: var(----link-unresolved-color);
 
-  /* Colors */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.4);
-  --titlebar-background-focused: var(--background-primary);
+  /* Lists */
+  --list-marker-color: var(--text-normal);
   --checkbox-marker-color: var(--background-secondary);
+
+  /* Blockquotes */
+  --blockquote-border-color: var(--text-muted);
+  --blockquote-color: var(--text-muted);
+
+  /* Code */
+  --code-background: rgba(var(--mono-rgb-100), 0.05);
+
+  /* Other */
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.5);
+  --titlebar-background-focused: var(--background-primary);
   --modal-background: var(--background-secondary);
   --divider-color: transparent !important;
+
+  /* Headings */
+  --h1-size: calc(var(--font-text-size) * 2);
+  --h2-size: calc(var(--font-text-size) * 1.75);
+  --h3-size: calc(var(--font-text-size) * 1.5);
+  --h4-size: calc(var(--font-text-size) * 1.25);
+  --h5-size: calc(var(--font-text-size) * 1.125);
+  --h6-size: calc(var(--font-text-size) * 1);
 }
 
 /* Basic Theme Colours */
@@ -438,18 +442,9 @@ body {
   opacity: 1;
 }
 
-/* Link styling */
-.cm-s-obsidian span.cm-hmd-internal-link:hover,
-.cm-s-obsidian span.cm-url,
-.cm-underline,
-.markdown-source-view.mod-cm6 .cm-underline,
-.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-  text-underline-offset: 0.125em;
-}
-
 /* Image rounded corners */
 img {
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-s);
 }
 
 /* Transparent background fix */
