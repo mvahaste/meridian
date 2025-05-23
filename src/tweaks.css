@@ -32,15 +32,6 @@
   opacity: 1;
 }
 
-/* Link styling */
-.cm-s-obsidian span.cm-hmd-internal-link:hover,
-.cm-s-obsidian span.cm-url,
-.cm-underline,
-.markdown-source-view.mod-cm6 .cm-underline,
-.markdown-source-view.mod-cm6 .is-unresolved .cm-underline {
-  text-underline-offset: 0.125em;
-}
-
 /* Image rounded corners */
 img {
   border-radius: var(--radius-m);
