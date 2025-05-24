@@ -462,6 +462,12 @@ settings:
     description: De-emphasize file properties in the editor (preview mode).
     type: class-toggle
     default: true
+  -
+    id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
 
 */
 /* Desaturate and fade status bar */
@@ -481,7 +487,7 @@ settings:
 }
 
 /* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
-.embedded-backlinks,
+.deemphasize-embedded-backlinks .embedded-backlinks,
 .deemphasize-file-properties .metadata-container {
   filter: grayscale(1);
   opacity: 0.3;
@@ -490,8 +496,8 @@ settings:
     opacity 0.3s ease;
 }
 
-.embedded-backlinks:hover,
-.embedded-backlinks:focus-within,
+.deemphasize-embedded-backlinks .embedded-backlinks:hover,
+.deemphasize-embedded-backlinks .embedded-backlinks:focus-within,
 .deemphasize-file-properties .metadata-container:hover,
 .deemphasize-file-properties .metadata-container:focus-within {
   filter: grayscale(0);

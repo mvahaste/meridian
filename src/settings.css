@@ -47,5 +47,11 @@ settings:
     description: De-emphasize file properties in the editor (preview mode).
     type: class-toggle
     default: true
+  -
+    id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
 
 */
