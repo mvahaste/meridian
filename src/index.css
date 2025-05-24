@@ -26,11 +26,6 @@ body {
 
   /* Headings */
   --h1-size: calc(var(--font-text-size) * 2);
-  --h2-size: calc(var(--font-text-size) * 1.75);
-  --h3-size: calc(var(--font-text-size) * 1.5);
-  --h4-size: calc(var(--font-text-size) * 1.25);
-  --h5-size: calc(var(--font-text-size) * 1.125);
-  --h6-size: calc(var(--font-text-size) * 1);
 }
 
 /* Basic Theme Colours */
