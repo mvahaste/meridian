@@ -41,5 +41,11 @@ settings:
     description: De-emphasize the status bar (preview mode).
     type: class-toggle
     default: true
+  -
+    id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
 
 */

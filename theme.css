@@ -456,6 +456,12 @@ settings:
     description: De-emphasize the status bar (preview mode).
     type: class-toggle
     default: true
+  -
+    id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
 
 */
 /* Desaturate and fade status bar */
@@ -476,7 +482,7 @@ settings:
 
 /* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
 .embedded-backlinks,
-.metadata-container {
+.deemphasize-file-properties .metadata-container {
   filter: grayscale(1);
   opacity: 0.3;
   transition:
@@ -486,8 +492,8 @@ settings:
 
 .embedded-backlinks:hover,
 .embedded-backlinks:focus-within,
-.metadata-container:hover,
-.metadata-container:focus-within {
+.deemphasize-file-properties .metadata-container:hover,
+.deemphasize-file-properties .metadata-container:focus-within {
   filter: grayscale(0);
   opacity: 1;
 }
