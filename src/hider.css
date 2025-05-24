@@ -148,3 +148,8 @@
 .workspace-tab-container:hover .graph-controls {
   opacity: 1;
 }
+
+/* Hide header link underline */
+.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+  text-decoration: none !important;
+}

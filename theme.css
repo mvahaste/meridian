@@ -355,6 +355,11 @@
 .workspace-tab-container:hover .graph-controls {
   opacity: 1;
 }
+
+/* Hide header link underline */
+.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+  text-decoration: none !important;
+}
 /* Obsidian Variables */
 body {
   /* Typography */
@@ -466,6 +471,12 @@ settings:
     id: deemphasize-embedded-backlinks
     title: De-emphasize Embedded Backlinks
     description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
     type: class-toggle
     default: true
 
