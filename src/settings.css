@@ -35,5 +35,11 @@ settings:
       -
         label: Never
         value: hide-tab-bar-never
+  -
+    id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
 
 */

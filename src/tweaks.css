@@ -1,5 +1,5 @@
 /* Desaturate and fade status bar */
-.status-bar {
+.deemphasize-status-bar .status-bar {
   filter: saturate(0);
   opacity: 0.5;
   border: none;
@@ -8,8 +8,8 @@
     opacity 0.3s ease;
 }
 
-.status-bar:hover,
-.status-bar:focus-within {
+.deemphasize-status-bar .status-bar:hover,
+.deemphasize-status-bar .status-bar:focus-within {
   filter: saturate(1);
   opacity: 1;
 }

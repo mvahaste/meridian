@@ -450,10 +450,16 @@ settings:
       -
         label: Never
         value: hide-tab-bar-never
+  -
+    id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
 
 */
 /* Desaturate and fade status bar */
-.status-bar {
+.deemphasize-status-bar .status-bar {
   filter: saturate(0);
   opacity: 0.5;
   border: none;
@@ -462,8 +468,8 @@ settings:
     opacity 0.3s ease;
 }
 
-.status-bar:hover,
-.status-bar:focus-within {
+.deemphasize-status-bar .status-bar:hover,
+.deemphasize-status-bar .status-bar:focus-within {
   filter: saturate(1);
   opacity: 1;
 }
