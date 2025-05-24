@@ -368,7 +368,10 @@ body {
   --code-background: rgba(var(--mono-rgb-100), 0.05);
 
   /* Other */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-background-translucent: rgba(
+    var(--mono-rgb-0),
+    var(--background-opacity, 0.5)
+  );
   --titlebar-background-focused: var(--background-primary);
   --modal-background: var(--background-secondary);
   --divider-color: transparent !important;
@@ -402,6 +405,28 @@ body {
 :not(.mod-windows).theme-dark {
   --background-primary: transparent;
 }
+/* @settings
+
+name: Meridian
+id: mvahaste-meridian
+settings:
+  - 
+    id: background-opacity
+    title: Background Opacity
+    description: The opacity of the background mask (black in dark mode, white in light mode).
+    type: variable-number-slider
+    default: 0.5
+    step: 0.01
+    min: 0
+    max: 1
+  -
+    id: show-header-hashtags
+    title: Show Header Hashtags
+    description: Show hashtags before headers in the editor (preview mode).
+    type: class-toggle
+    default: true
+
+*/
 /* Desaturate and fade status bar */
 .status-bar {
   filter: saturate(0);
@@ -483,27 +508,27 @@ img {
 }
 
 /* Show header hashtags */
-.HyperMD-header-1:not(.cm-active) .cm-header::before {
+.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
   content: "# ";
   color: var(--text-faint);
 }
-.HyperMD-header-2:not(.cm-active) .cm-header::before {
+.show-header-hashtags .HyperMD-header-2:not(.cm-active) .cm-header::before {
   content: "## ";
   color: var(--text-faint);
 }
-.HyperMD-header-3:not(.cm-active) .cm-header::before {
+.show-header-hashtags .HyperMD-header-3:not(.cm-active) .cm-header::before {
   content: "### ";
   color: var(--text-faint);
 }
-.HyperMD-header-4:not(.cm-active) .cm-header::before {
+.show-header-hashtags .HyperMD-header-4:not(.cm-active) .cm-header::before {
   content: "#### ";
   color: var(--text-faint);
 }
-.HyperMD-header-5:not(.cm-active) .cm-header::before {
+.show-header-hashtags .HyperMD-header-5:not(.cm-active) .cm-header::before {
   content: "##### ";
   color: var(--text-faint);
 }
-.HyperMD-header-6:not(.cm-active) .cm-header::before {
+.show-header-hashtags .HyperMD-header-6:not(.cm-active) .cm-header::before {
   content: "###### ";
   color: var(--text-faint);
 }
