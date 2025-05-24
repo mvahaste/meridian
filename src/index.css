@@ -26,6 +26,12 @@ body {
 
   /* Headings */
   --h1-size: calc(var(--font-text-size) * 2);
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 700;
+  --h4-weight: 700;
+  --h5-weight: 700;
+  --h6-weight: 700;
 }
 
 /* Basic Theme Colours */
