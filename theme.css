@@ -206,7 +206,10 @@
   transform: scale(2);
 }
 /* Hide tabs when only one tab is open (with transition) */
-.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
+.hide-tab-bar-dynamic
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container {
   max-height: 3em;
   opacity: 1;
   overflow: hidden;
@@ -215,13 +218,18 @@
     max-height 0.3s ease;
 }
 
-.mod-root
+.hide-tab-bar-dynamic
+  .mod-root
   .workspace-tabs:not(.mod-stacked):not(
     :has(.workspace-tab-header:nth-of-type(2))
   )
   .workspace-tab-header-container {
   max-height: 0;
   opacity: 0;
+}
+
+.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+  display: none;
 }
 
 /* Hide sidebar buttons */
@@ -425,6 +433,23 @@ settings:
     description: Show hashtags before headers in the editor (preview mode).
     type: class-toggle
     default: true
+  -
+    id: hide-tab-bar
+    title: Hide Tab Bar
+    description: Hide the tab bar dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-tab-bar-dynamic
+    options:
+      -
+        label: Dynamic
+        value: hide-tab-bar-dynamic
+      -
+        label: Always
+        value: hide-tab-bar-always
+      -
+        label: Never
+        value: hide-tab-bar-never
 
 */
 /* Desaturate and fade status bar */
