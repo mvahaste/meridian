@@ -1,4 +1,4 @@
-/* Hide tabs when only one tab is open (with transition) */
+/* Hide tab bar depending on setting */
 .hide-tab-bar-dynamic
   .mod-root
   .workspace-tabs:not(.mod-stacked)

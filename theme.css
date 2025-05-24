@@ -205,7 +205,7 @@
   .image-embed:hover {
   transform: scale(2);
 }
-/* Hide tabs when only one tab is open (with transition) */
+/* Hide tab bar depending on setting */
 .hide-tab-bar-dynamic
   .mod-root
   .workspace-tabs:not(.mod-stacked)
@@ -532,7 +532,7 @@ img {
   padding-bottom: 0.075em !important;
 }
 
-/* Show header hashtags */
+/* Show header hashtags depending on setting */
 .show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
   content: "# ";
   color: var(--text-faint);

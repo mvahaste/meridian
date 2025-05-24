@@ -78,7 +78,7 @@ img {
   padding-bottom: 0.075em !important;
 }
 
-/* Show header hashtags */
+/* Show header hashtags depending on setting */
 .show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
   content: "# ";
   color: var(--text-faint);
