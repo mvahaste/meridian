@@ -1,5 +1,5 @@
 /* Desaturate and fade status bar */
-.status-bar {
+.deemphasize-status-bar .status-bar {
   filter: saturate(0);
   opacity: 0.5;
   border: none;
@@ -8,15 +8,15 @@
     opacity 0.3s ease;
 }
 
-.status-bar:hover,
-.status-bar:focus-within {
+.deemphasize-status-bar .status-bar:hover,
+.deemphasize-status-bar .status-bar:focus-within {
   filter: saturate(1);
   opacity: 1;
 }
 
 /* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
-.embedded-backlinks,
-.metadata-container {
+.deemphasize-embedded-backlinks .embedded-backlinks,
+.deemphasize-file-properties .metadata-container {
   filter: grayscale(1);
   opacity: 0.3;
   transition:
@@ -24,10 +24,10 @@
     opacity 0.3s ease;
 }
 
-.embedded-backlinks:hover,
-.embedded-backlinks:focus-within,
-.metadata-container:hover,
-.metadata-container:focus-within {
+.deemphasize-embedded-backlinks .embedded-backlinks:hover,
+.deemphasize-embedded-backlinks .embedded-backlinks:focus-within,
+.deemphasize-file-properties .metadata-container:hover,
+.deemphasize-file-properties .metadata-container:focus-within {
   filter: grayscale(0);
   opacity: 1;
 }
@@ -76,4 +76,41 @@ img {
 
 .HyperMD-header-4:has(+ .cm-line):not(:has(+ .HyperMD-header-5)) {
   padding-bottom: 0.075em !important;
+}
+
+/* Show header hashtags depending on setting */
+.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
+  content: "# ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-2:not(.cm-active) .cm-header::before {
+  content: "## ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-3:not(.cm-active) .cm-header::before {
+  content: "### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-4:not(.cm-active) .cm-header::before {
+  content: "#### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-5:not(.cm-active) .cm-header::before {
+  content: "##### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-6:not(.cm-active) .cm-header::before {
+  content: "###### ";
+  color: var(--text-faint);
+}
+
+/* Minimal image captions */
+.minimal-image-captions .image-captions-figure {
+  background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+  background-color: transparent !important;
+  font-size: 0.8em !important;
+  text-align: left !important;
 }

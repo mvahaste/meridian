@@ -205,8 +205,11 @@
   .image-embed:hover {
   transform: scale(2);
 }
-/* Hide tabs when only one tab is open (with transition) */
-.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
+/* Hide tab bar depending on setting */
+.hide-tab-bar-dynamic
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container {
   max-height: 3em;
   opacity: 1;
   overflow: hidden;
@@ -215,13 +218,18 @@
     max-height 0.3s ease;
 }
 
-.mod-root
+.hide-tab-bar-dynamic
+  .mod-root
   .workspace-tabs:not(.mod-stacked):not(
     :has(.workspace-tab-header:nth-of-type(2))
   )
   .workspace-tab-header-container {
   max-height: 0;
   opacity: 0;
+}
+
+.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+  display: none;
 }
 
 /* Hide sidebar buttons */
@@ -347,6 +355,11 @@
 .workspace-tab-container:hover .graph-controls {
   opacity: 1;
 }
+
+/* Hide header link underline */
+.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+  text-decoration: none !important;
+}
 /* Obsidian Variables */
 body {
   /* Typography */
@@ -368,19 +381,16 @@ body {
   --code-background: rgba(var(--mono-rgb-100), 0.05);
 
   /* Other */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-background-translucent: rgba(
+    var(--mono-rgb-0),
+    var(--background-opacity, 0.5)
+  );
   --titlebar-background-focused: var(--background-primary);
   --modal-background: var(--background-secondary);
   --divider-color: transparent !important;
 
   /* Headings */
   --h1-size: calc(var(--font-text-size) * 2);
-  --h1-weight: 700;
-  --h2-weight: 700;
-  --h3-weight: 700;
-  --h4-weight: 700;
-  --h5-weight: 700;
-  --h6-weight: 700;
 }
 
 /* Basic Theme Colours */
@@ -408,8 +418,77 @@ body {
 :not(.mod-windows).theme-dark {
   --background-primary: transparent;
 }
+/* @settings
+
+name: Meridian
+id: mvahaste-meridian
+settings:
+  - 
+    id: background-opacity
+    title: Background Opacity
+    description: The opacity of the background mask (black in dark mode, white in light mode).
+    type: variable-number-slider
+    default: 0.5
+    step: 0.01
+    min: 0
+    max: 1
+  -
+    id: show-header-hashtags
+    title: Show Header Hashtags
+    description: Show hashtags before headers in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: hide-tab-bar
+    title: Hide Tab Bar
+    description: Hide the tab bar dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-tab-bar-dynamic
+    options:
+      -
+        label: Dynamic
+        value: hide-tab-bar-dynamic
+      -
+        label: Always
+        value: hide-tab-bar-always
+      -
+        label: Never
+        value: hide-tab-bar-never
+  -
+    id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
+
+*/
 /* Desaturate and fade status bar */
-.status-bar {
+.deemphasize-status-bar .status-bar {
   filter: saturate(0);
   opacity: 0.5;
   border: none;
@@ -418,15 +497,15 @@ body {
     opacity 0.3s ease;
 }
 
-.status-bar:hover,
-.status-bar:focus-within {
+.deemphasize-status-bar .status-bar:hover,
+.deemphasize-status-bar .status-bar:focus-within {
   filter: saturate(1);
   opacity: 1;
 }
 
 /* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
-.embedded-backlinks,
-.metadata-container {
+.deemphasize-embedded-backlinks .embedded-backlinks,
+.deemphasize-file-properties .metadata-container {
   filter: grayscale(1);
   opacity: 0.3;
   transition:
@@ -434,10 +513,10 @@ body {
     opacity 0.3s ease;
 }
 
-.embedded-backlinks:hover,
-.embedded-backlinks:focus-within,
-.metadata-container:hover,
-.metadata-container:focus-within {
+.deemphasize-embedded-backlinks .embedded-backlinks:hover,
+.deemphasize-embedded-backlinks .embedded-backlinks:focus-within,
+.deemphasize-file-properties .metadata-container:hover,
+.deemphasize-file-properties .metadata-container:focus-within {
   filter: grayscale(0);
   opacity: 1;
 }
@@ -486,4 +565,41 @@ img {
 
 .HyperMD-header-4:has(+ .cm-line):not(:has(+ .HyperMD-header-5)) {
   padding-bottom: 0.075em !important;
+}
+
+/* Show header hashtags depending on setting */
+.show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
+  content: "# ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-2:not(.cm-active) .cm-header::before {
+  content: "## ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-3:not(.cm-active) .cm-header::before {
+  content: "### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-4:not(.cm-active) .cm-header::before {
+  content: "#### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-5:not(.cm-active) .cm-header::before {
+  content: "##### ";
+  color: var(--text-faint);
+}
+.show-header-hashtags .HyperMD-header-6:not(.cm-active) .cm-header::before {
+  content: "###### ";
+  color: var(--text-faint);
+}
+
+/* Minimal image captions */
+.minimal-image-captions .image-captions-figure {
+  background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+  background-color: transparent !important;
+  font-size: 0.8em !important;
+  text-align: left !important;
 }

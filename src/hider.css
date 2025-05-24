@@ -1,5 +1,8 @@
-/* Hide tabs when only one tab is open (with transition) */
-.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container {
+/* Hide tab bar depending on setting */
+.hide-tab-bar-dynamic
+  .mod-root
+  .workspace-tabs:not(.mod-stacked)
+  .workspace-tab-header-container {
   max-height: 3em;
   opacity: 1;
   overflow: hidden;
@@ -8,13 +11,18 @@
     max-height 0.3s ease;
 }
 
-.mod-root
+.hide-tab-bar-dynamic
+  .mod-root
   .workspace-tabs:not(.mod-stacked):not(
     :has(.workspace-tab-header:nth-of-type(2))
   )
   .workspace-tab-header-container {
   max-height: 0;
   opacity: 0;
+}
+
+.hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
+  display: none;
 }
 
 /* Hide sidebar buttons */
@@ -139,4 +147,9 @@
 
 .workspace-tab-container:hover .graph-controls {
   opacity: 1;
+}
+
+/* Hide header link underline */
+.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+  text-decoration: none !important;
 }

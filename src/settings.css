@@ -1,0 +1,69 @@
+/* @settings
+
+name: Meridian
+id: mvahaste-meridian
+settings:
+  - 
+    id: background-opacity
+    title: Background Opacity
+    description: The opacity of the background mask (black in dark mode, white in light mode).
+    type: variable-number-slider
+    default: 0.5
+    step: 0.01
+    min: 0
+    max: 1
+  -
+    id: show-header-hashtags
+    title: Show Header Hashtags
+    description: Show hashtags before headers in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: hide-tab-bar
+    title: Hide Tab Bar
+    description: Hide the tab bar dynamically, always, or never.
+    type: class-select
+    allowEmpty: false
+    default: hide-tab-bar-dynamic
+    options:
+      -
+        label: Dynamic
+        value: hide-tab-bar-dynamic
+      -
+        label: Always
+        value: hide-tab-bar-always
+      -
+        label: Never
+        value: hide-tab-bar-never
+  -
+    id: deemphasize-status-bar
+    title: De-emphasize Status Bar
+    description: De-emphasize the status bar (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: deemphasize-file-properties
+    title: De-emphasize File Properties
+    description: De-emphasize file properties in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: deemphasize-embedded-backlinks
+    title: De-emphasize Embedded Backlinks
+    description: De-emphasize embedded backlinks in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
+    type: class-toggle
+    default: true
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
+
+*/

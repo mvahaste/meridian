@@ -19,19 +19,16 @@ body {
   --code-background: rgba(var(--mono-rgb-100), 0.05);
 
   /* Other */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+  --workspace-background-translucent: rgba(
+    var(--mono-rgb-0),
+    var(--background-opacity, 0.5)
+  );
   --titlebar-background-focused: var(--background-primary);
   --modal-background: var(--background-secondary);
   --divider-color: transparent !important;
 
   /* Headings */
   --h1-size: calc(var(--font-text-size) * 2);
-  --h1-weight: 700;
-  --h2-weight: 700;
-  --h3-weight: 700;
-  --h4-weight: 700;
-  --h5-weight: 700;
-  --h6-weight: 700;
 }
 
 /* Basic Theme Colours */
