@@ -479,6 +479,12 @@ settings:
     description: Hide the underline on header links in the editor (preview mode).
     type: class-toggle
     default: true
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
 
 */
 /* Desaturate and fade status bar */
@@ -585,4 +591,15 @@ img {
 .show-header-hashtags .HyperMD-header-6:not(.cm-active) .cm-header::before {
   content: "###### ";
   color: var(--text-faint);
+}
+
+/* Minimal image captions */
+.minimal-image-captions .image-captions-figure {
+  background-color: transparent !important;
+}
+
+.minimal-image-captions .image-captions-caption {
+  background-color: transparent !important;
+  font-size: 0.8em !important;
+  text-align: left !important;
 }

@@ -59,5 +59,11 @@ settings:
     description: Hide the underline on header links in the editor (preview mode).
     type: class-toggle
     default: true
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
 
 */
