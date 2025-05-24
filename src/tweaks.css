@@ -77,3 +77,29 @@ img {
 .HyperMD-header-4:has(+ .cm-line):not(:has(+ .HyperMD-header-5)) {
   padding-bottom: 0.075em !important;
 }
+
+/* Show header hashtags */
+.HyperMD-header-1:not(.cm-active) .cm-header::before {
+  content: "# ";
+  color: var(--text-faint);
+}
+.HyperMD-header-2:not(.cm-active) .cm-header::before {
+  content: "## ";
+  color: var(--text-faint);
+}
+.HyperMD-header-3:not(.cm-active) .cm-header::before {
+  content: "### ";
+  color: var(--text-faint);
+}
+.HyperMD-header-4:not(.cm-active) .cm-header::before {
+  content: "#### ";
+  color: var(--text-faint);
+}
+.HyperMD-header-5:not(.cm-active) .cm-header::before {
+  content: "##### ";
+  color: var(--text-faint);
+}
+.HyperMD-header-6:not(.cm-active) .cm-header::before {
+  content: "###### ";
+  color: var(--text-faint);
+}
