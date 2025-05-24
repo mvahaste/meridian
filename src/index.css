@@ -19,7 +19,7 @@ body {
   --code-background: rgba(var(--mono-rgb-100), 0.05);
 
   /* Other */
-  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.5);
+  --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
   --titlebar-background-focused: var(--background-primary);
   --modal-background: var(--background-secondary);
   --divider-color: transparent !important;
