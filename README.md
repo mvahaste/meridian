@@ -4,15 +4,13 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 ![Meridian Theme Screenshot](./docs/cover.png)
 
-The font shown in the screenshot is [Atkinson Hyperlegible Next](https://fonts.google.com/specimen/Atkinson+Hyperlegible+Next), and I'm using a snippet to hide the link underline on the first heading in the note. I also use the minimal image captions snippet, but it's not shown in the screenshot.
-
 ## Features
 
 > [!IMPORTANT]
-> This is a macOS focused theme.
-> It should also work on Windows (blur not supported), but not sure about other platforms.
+> This theme is designed with macOS in mind, it might not work elsewhere.
 
-- Hides clutter and distractions.
+- Translucent background, including the editor.
+- Hides clutter and distractions, configurable via the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
   - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
   - Dynamically hides the tab bar when only one tab is open.
   - Hide or de-emphasize various UI elements unless hovered/focused.
@@ -31,14 +29,6 @@ The font shown in the screenshot is [Atkinson Hyperlegible Next](https://fonts.g
   - I recommend creating a [note](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md?plain=1) with all the CSS classses applied so you get suggestions for them.
 - Supports both light and dark modes (way better in dark mode though).
 - Uses your Obsidian font settings, no annoying overrides.
-
-### Snippets
-
-These are optional CSS snippets you can use to customize your Obsidian further:
-
-- [header-font-lora.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-font-lora.css) - I like having a serif font for headers, this snippet uses the [Lora](https://fonts.google.com/specimen/Lora) font for headers.
-- [header-hide-link-underline.css](https://github.com/mvahaste/meridian/blob/main/snippets/header-hide-link-underline.css) - I make the first headings in my notes links to the note itself, this snippet hides the underline on those links unless hovered.
-- [minimal-image-captions.css](https://github.com/mvahaste/meridian/blob/main/snippets/minimal-image-captions.css) - I use the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin to add captions to images, this snippet makes them look nicer.
 
 ## Issues & Feature Requests
 
