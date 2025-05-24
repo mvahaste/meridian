@@ -63,3 +63,17 @@ img {
   > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
   --background-primary: #111111;
 }
+
+/* Larger gap between header and paragraph */
+.HyperMD-header-1:has(+ .cm-line):not(:has(+ .HyperMD-header-2)),
+.HyperMD-header-2:has(+ .cm-line):not(:has(+ .HyperMD-header-3)) {
+  padding-bottom: 0.125em !important;
+}
+
+.HyperMD-header-3:has(+ .cm-line):not(:has(+ .HyperMD-header-4)) {
+  padding-bottom: 0.1em !important;
+}
+
+.HyperMD-header-4:has(+ .cm-line):not(:has(+ .HyperMD-header-5)) {
+  padding-bottom: 0.075em !important;
+}
