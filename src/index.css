@@ -9,7 +9,6 @@ body {
   --link-unresolved-decoration-color: var(----link-unresolved-color);
 
   /* Lists */
-  --list-marker-color: var(--text-normal);
   --checkbox-marker-color: var(--background-secondary);
 
   /* Blockquotes */
