@@ -4,6 +4,19 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 ![Meridian Theme Screenshot](./docs/cover.png)
 
+# 📑 Table of Contents
+
+- [🚀 Quickstart](#🚀-quickstart)
+  - [📦 Community Themes](#📦-community-themes)
+  - [🛠️ Manual Installation](#🛠️-manual-installation)
+- [✨ Features](#✨-features)
+  - [🧼 Minimal & Uncluttered UI](#🧼-minimal-&-uncluttered-ui)
+  - [📚 Per-Note Visual Customization](#📚-per-note-visual-customization)
+  - [⚙️ Configurable Settings](#⚙️-configurable-settings)
+- [🐛 Issues & Feature Requests](#🐛-issues-&-feature-requests)
+- [🛠 Development Guide](#🛠-development-guide)
+- [❤️ Acknowledgements](#❤️-acknowledgements)
+
 ## 🚀 Quickstart
 
 ### 📦 Community Themes
@@ -79,3 +92,7 @@ Meridian is a personal project, but I welcome contributions and feedback. I'll d
 
 - Forked from the [Apex](https://github.com/clearlysid/apex) theme.
 - Configurable via the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
+
+## 📄 License
+
+This theme is distributed under the [MIT License](LICENSE).
