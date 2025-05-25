@@ -512,7 +512,7 @@ settings:
     title: Show Header Hashtags
     description: Show hashtags before headers in the editor (preview mode).
     type: class-toggle
-    default: true
+    default: false
 
   -
     id: hide-header-link-underline
