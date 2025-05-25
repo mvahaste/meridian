@@ -1,4 +1,10 @@
-/* Hide tab bar depending on setting */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │            Workspace Tabs (Tab Bar, Headers)            │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide tab bar dynamically if only one tab */
 .hide-tab-bar-dynamic
   .mod-root
   .workspace-tabs:not(.mod-stacked)
@@ -21,16 +27,12 @@
   opacity: 0;
 }
 
+/* Always hide tab bar */
 .hide-tab-bar-always .mod-root .workspace-tabs .workspace-tab-header-container {
   display: none;
 }
 
-/* Hide sidebar buttons */
-.sidebar-toggle-button.mod-right,
-.sidebar-toggle-button.mod-left {
-  display: none;
-}
-
+/* macOS frameless window spacing fix */
 .mod-macos.is-hidden-frameless:not(.is-popout-window)
   .workspace
   .workspace-tabs.mod-top-right-space
@@ -38,49 +40,41 @@
   padding-right: 4px;
 }
 
-/* Hide meta */
-.markdown-reading-view .metadata-container {
-  display: none;
-}
-
-/* Hide scrollbars */
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide search count flair */
-.tree-item-flair:not(.tag-pane-tag-count) {
-  display: none;
-}
-
-/* Hide instructions */
-.prompt-instructions {
-  display: none;
-}
-
-/* Hide file nav header */
-.workspace-leaf-content[data-type="file-explorer"] .nav-header {
-  display: none;
-}
-
-/* Hide left panel header icons unless hovered */
-.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
-
-.mod-left-split
-  .mod-top-left-space
-  .workspace-tab-header-container-inner:hover {
-  opacity: 1;
-}
-
-/* Hide nav buttons */
+/* Hide navigation buttons in view header */
 .view-header-nav-buttons {
   display: none;
 }
 
-/* Hide tags, links, backlinks and outline nav headers unless hovered */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Sidebars & Dock Areas                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide left/right sidebar toggle buttons */
+.sidebar-toggle-button.mod-right,
+.sidebar-toggle-button.mod-left {
+  display: none;
+}
+
+/* Hide vault switcher unless hovered or active */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
+.workspace-sidedock-vault-profile
+  .workspace-drawer-vault-switcher.has-active-menu {
+  opacity: 1;
+}
+
+/* Hide vault action buttons (help, settings) */
+.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+  display: none !important;
+}
+
+/* Hide tag, backlinks, outgoing links, and outline headers unless hovered */
 .workspace-split .workspace-leaf-content[data-type="tag"] .nav-header,
 .workspace-split .workspace-leaf-content[data-type="outgoing-link"] .nav-header,
 .workspace-split .workspace-leaf-content[data-type="backlink"] .nav-header,
@@ -108,24 +102,12 @@
   height: 1.75em;
 }
 
-/* Hide vault switcher unless hovered */
-.workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+/* Hide file explorer nav header */
+.workspace-leaf-content[data-type="file-explorer"] .nav-header {
+  display: none;
 }
 
-.workspace-sidedock-vault-profile:hover .workspace-drawer-vault-switcher,
-.workspace-sidedock-vault-profile
-  .workspace-drawer-vault-switcher.has-active-menu {
-  opacity: 1;
-}
-
-/* Hide vault actions (help, settings) */
-.workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
-  display: none !important;
-}
-
-/* Hide local graph header unless hovered */
+/* Hide local graph tab unless hovered */
 .workspace-tab-header-container
   .workspace-tab-header-container-inner
   [data-type="localgraph"] {
@@ -139,6 +121,40 @@
   opacity: 1;
 }
 
+/* Hide left panel tab headers unless hovered */
+.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.mod-left-split
+  .mod-top-left-space
+  .workspace-tab-header-container-inner:hover {
+  opacity: 1;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Metadata & Document Display               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide metadata in reading view */
+.markdown-reading-view .metadata-container {
+  display: none;
+}
+
+/* Hide header underline for internal links */
+.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
+  text-decoration: none !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                       Graph View                        │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
 /* Hide graph controls unless hovered */
 .workspace-tab-container .graph-controls {
   opacity: 0;
@@ -149,7 +165,23 @@
   opacity: 1;
 }
 
-/* Hide header link underline */
-.hide-header-link-underline .HyperMD-header .cm-hmd-internal-link a {
-  text-decoration: none !important;
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                UI Chrome & Miscellaneous                │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+
+/* Hide all scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide search result flair (except tag count) */
+.tree-item-flair:not(.tag-pane-tag-count) {
+  display: none;
+}
+
+/* Hide instructions (e.g. in modals or prompts) */
+.prompt-instructions {
+  display: none;
 }
