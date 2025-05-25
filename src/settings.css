@@ -27,7 +27,7 @@ settings:
     description: Show header levels instead of collapse indicators in the editor (preview mode).
     type: class-select
     allowEmpty: false
-    default: show-header-levels-always
+    default: show-header-levels-hover
     options:
       -
         label: Always
