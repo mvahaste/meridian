@@ -13,6 +13,20 @@ settings:
     min: 0
     max: 1
   -
+    id: show-header-levels
+    title: Show Header Levels
+    description: Show header levels instead of collapse indicators in the editor (preview mode).
+    type: class-select
+    allowEmpty: false
+    default: show-header-levels-always
+    options:
+      -
+        label: Always
+        value: show-header-levels-always
+      -
+        label: Hover
+        value: show-header-levels-hover
+  -
     id: show-header-hashtags
     title: Show Header Hashtags
     description: Show hashtags before headers in the editor (preview mode).

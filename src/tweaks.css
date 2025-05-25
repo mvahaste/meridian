@@ -114,3 +114,39 @@ img {
   font-size: 0.8em !important;
   text-align: left !important;
 }
+
+/* Show header levels instead of collapse indicators */
+.show-header-levels-always
+  .HyperMD-header
+  .cm-fold-indicator
+  .collapse-indicator {
+  opacity: 1 !important;
+}
+.HyperMD-header .cm-fold-indicator .collapse-indicator svg {
+  display: none;
+}
+.HyperMD-header .cm-fold-indicator .collapse-indicator::before {
+  font-size: calc(var(--font-text-size) * 0.75);
+  font-weight: 600 !important;
+  color: var(--text-faint);
+  width: max-content;
+  margin-right: 0.25em;
+}
+.HyperMD-header-1 .cm-fold-indicator .collapse-indicator::before {
+  content: "H1";
+}
+.HyperMD-header-2 .cm-fold-indicator .collapse-indicator::before {
+  content: "H2";
+}
+.HyperMD-header-3 .cm-fold-indicator .collapse-indicator::before {
+  content: "H3";
+}
+.HyperMD-header-4 .cm-fold-indicator .collapse-indicator::before {
+  content: "H4";
+}
+.HyperMD-header-5 .cm-fold-indicator .collapse-indicator::before {
+  content: "H5";
+}
+.HyperMD-header-6 .cm-fold-indicator .collapse-indicator::before {
+  content: "H6";
+}
