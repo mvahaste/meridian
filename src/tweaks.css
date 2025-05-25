@@ -1,4 +1,8 @@
-/* Desaturate and fade status bar */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Status Bar Deemphasis                  │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .deemphasize-status-bar .status-bar {
   filter: saturate(0);
   opacity: 0.5;
@@ -14,7 +18,11 @@
   opacity: 1;
 }
 
-/* Grayscale and lower the contrast of file properties and embedded backlinks when not hovered */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │     Embedded Backlinks & File Properties Deemphasis     │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .deemphasize-embedded-backlinks .embedded-backlinks,
 .deemphasize-file-properties .metadata-container {
   filter: grayscale(1);
@@ -32,12 +40,20 @@
   opacity: 1;
 }
 
-/* Image rounded corners */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                      Image Styling                      │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 img {
   border-radius: var(--radius-s);
 }
 
-/* Transparent background fix */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │              Transparent Background Fixes               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 :not(.mod-windows) .prompt,
 :not(.mod-windows) .popover,
 :not(.mod-windows) .suggestion,
@@ -47,24 +63,35 @@ img {
   background-color: var(--modal-background) !important;
 }
 
-/* Fix titlebar draggability */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Titlebar Draggability Fixes               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .view-header-title-container {
   -webkit-app-region: drag;
 }
 
-/* Fix not being able to click on the elements inside the titlebar */
 .view-header-title-container div {
   -webkit-app-region: no-drag;
 }
 
-/* Stacked tabs transparent background fix */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │               Stacked Tabs Background Fix               │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .mod-stacked
   .workspace-tab-container
   > div:not(:nth-of-type(1)):not(:nth-of-type(2)) {
   --background-primary: #111111;
 }
 
-/* Larger gap between header and paragraph */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │       Header Spacing Between Header and Paragraph       │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .HyperMD-header-1:has(+ .cm-line):not(:has(+ .HyperMD-header-2)),
 .HyperMD-header-2:has(+ .cm-line):not(:has(+ .HyperMD-header-3)) {
   padding-bottom: 0.125em !important;
@@ -78,7 +105,11 @@ img {
   padding-bottom: 0.075em !important;
 }
 
-/* Show header hashtags depending on setting */
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │                  Show Header Hashtags                   │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
 .show-header-hashtags .HyperMD-header-1:not(.cm-active) .cm-header::before {
   content: "# ";
   color: var(--text-faint);
@@ -104,7 +135,9 @@ img {
   color: var(--text-faint);
 }
 
-/* Minimal image captions */
+/* ───────────────────────────────────────────────
+   Minimal Image Captions
+─────────────────────────────────────────────── */
 .minimal-image-captions .image-captions-figure {
   background-color: transparent !important;
 }
@@ -113,4 +146,47 @@ img {
   background-color: transparent !important;
   font-size: 0.8em !important;
   text-align: left !important;
+}
+
+/*
+ * ╭─────────────────────────────────────────────────────────╮
+ * │    Show Header Levels Instead of Collapse Indicators    │
+ * ╰─────────────────────────────────────────────────────────╯
+*/
+.show-header-levels-always
+  .HyperMD-header
+  .cm-fold-indicator
+  .collapse-indicator {
+  opacity: 1 !important;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator svg {
+  display: none;
+}
+
+.HyperMD-header .cm-fold-indicator .collapse-indicator::before {
+  font-size: calc(var(--font-text-size) * 0.75);
+  font-weight: 600 !important;
+  color: var(--text-faint);
+  width: max-content;
+  margin-right: 0.25em;
+}
+
+.HyperMD-header-1 .cm-fold-indicator .collapse-indicator::before {
+  content: "H1";
+}
+.HyperMD-header-2 .cm-fold-indicator .collapse-indicator::before {
+  content: "H2";
+}
+.HyperMD-header-3 .cm-fold-indicator .collapse-indicator::before {
+  content: "H3";
+}
+.HyperMD-header-4 .cm-fold-indicator .collapse-indicator::before {
+  content: "H4";
+}
+.HyperMD-header-5 .cm-fold-indicator .collapse-indicator::before {
+  content: "H5";
+}
+.HyperMD-header-6 .cm-fold-indicator .collapse-indicator::before {
+  content: "H6";
 }

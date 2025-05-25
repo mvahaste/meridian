@@ -3,6 +3,7 @@
 name: Meridian
 id: mvahaste-meridian
 settings:
+
   - 
     id: background-opacity
     title: Background Opacity
@@ -12,12 +13,43 @@ settings:
     step: 0.01
     min: 0
     max: 1
+
+  -
+    id: minimal-image-captions
+    title: Minimal Image Captions
+    description: Use a minimal image caption style (preview mode).
+    type: class-toggle
+    default: true
+
+  -
+    id: show-header-levels
+    title: Show Header Levels
+    description: Show header levels instead of collapse indicators in the editor (preview mode).
+    type: class-select
+    allowEmpty: false
+    default: show-header-levels-hover
+    options:
+      -
+        label: Always
+        value: show-header-levels-always
+      -
+        label: Hover
+        value: show-header-levels-hover
+
   -
     id: show-header-hashtags
     title: Show Header Hashtags
     description: Show hashtags before headers in the editor (preview mode).
     type: class-toggle
+    default: false
+
+  -
+    id: hide-header-link-underline
+    title: Hide Header Link Underline
+    description: Hide the underline on header links in the editor (preview mode).
+    type: class-toggle
     default: true
+
   -
     id: hide-tab-bar
     title: Hide Tab Bar
@@ -35,34 +67,25 @@ settings:
       -
         label: Never
         value: hide-tab-bar-never
+
   -
     id: deemphasize-status-bar
     title: De-emphasize Status Bar
     description: De-emphasize the status bar (preview mode).
     type: class-toggle
     default: true
+
   -
     id: deemphasize-file-properties
     title: De-emphasize File Properties
     description: De-emphasize file properties in the editor (preview mode).
     type: class-toggle
     default: true
+
   -
     id: deemphasize-embedded-backlinks
     title: De-emphasize Embedded Backlinks
     description: De-emphasize embedded backlinks in the editor (preview mode).
-    type: class-toggle
-    default: true
-  -
-    id: hide-header-link-underline
-    title: Hide Header Link Underline
-    description: Hide the underline on header links in the editor (preview mode).
-    type: class-toggle
-    default: true
-  -
-    id: minimal-image-captions
-    title: Minimal Image Captions
-    description: Use a minimal image caption style (preview mode).
     type: class-toggle
     default: true
 

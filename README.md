@@ -4,45 +4,96 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 ![Meridian Theme Screenshot](./docs/cover.png)
 
-## Features
+## 📑 Table of Contents
+
+- [🚀 Quickstart](#-quickstart)
+  - [📦 Community Themes](#-community-themes)
+  - [🛠️ Manual Installation](#%EF%B8%8F-manual-installation)
+- [✨ Features](#-features)
+  - [🧼 Minimal & Uncluttered UI](#-minimal--uncluttered-ui)
+  - [📚 Per-Note Visual Customization](#-per-note-visual-customization)
+  - [⚙️ Configurable Settings](#%EF%B8%8F-configurable-settings)
+- [🐛 Issues & Feature Requests](#-issues--feature-requests)
+- [🛠 Development Guide](#-development-guide)
+- [❤️ Acknowledgements](#%EF%B8%8F-acknowledgements)
+- [📄 License](#-license)
+
+## 🚀 Quickstart
+
+### 📦 Community Themes
+
+1. Go to **Settings → Appearance → Themes → Manage**.
+2. Search for **Meridian** in the community themes list.
+3. Select **Install and use**.
+4. (Optional) Install the **Style Settings** plugin to access customization options.
+
+### 🛠️ Manual Installation
+
+Clone this repository into your `.obsidian/themes` directory, or:
+
+1. Download the `theme.css` and `manifest.json` files from the [latest release](https://github.com/mvahaste/meridian/releases/latest).
+2. Place them into a new folder named `Meridian` inside your `.obsidian/themes` directory.
+3. Enable the theme in **Settings → Appearance → Themes** (you might need to restart Obsidian).
+4. (Optional) Install the **Style Settings** plugin to access customization options.
+
+## ✨ Features
 
 > [!IMPORTANT]
-> This theme is designed with macOS in mind, it might not work elsewhere.
+> This is a macOS-focused theme.  
+> It should also work on Windows (blur not supported), but support for other platforms is not guaranteed.
 
-- Translucent background, including the editor.
-- Hides clutter and distractions, configurable via the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
-  - No unnecessary icons in the sidebars—I do most things with keyboard shortcuts or the command palette.
-  - Dynamically hides the tab bar when only one tab is open.
-  - Hide or de-emphasize various UI elements unless hovered/focused.
-  - Other small tweaks to reduce clutter.
-- Optional CSS rules you can apply on a note-by-note basis with the `cssclasses` file property.
-  - `image-invert` - Inverts images.
-  - `image-grayscale` - Grayscales images.
-  - `image-sepia` - Sepias images.
-  - `image-blur-[sm|md|lg]` - Blurs images unless hovered.
-  - `image-hover-scale-[xs|sm|md|lg|xl]` - Scales images on hover.
-  - `image-[left|center|right]` - Aligns images.
-  - `text-[left|center|right|justify]` - Aligns text.
-  - `text-[uppercase|lowercase|capitalize]` - Changes text case.
-  - `font-monospace` - Makes text use your monospace font.
-  - `font-[thin|light|regular|medium|bold|black]` - Makes text a specific weight.
-  - I recommend creating a [note](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md?plain=1) with all the CSS classses applied so you get suggestions for them.
-- Supports both light and dark modes (way better in dark mode though).
-- Uses your Obsidian font settings, no annoying overrides.
+### 🧼 Minimal & Uncluttered UI
 
-## Issues & Feature Requests
+Hides visual noise and distractions across the interface.
 
-If you find a bug or want to request a feature feel free to open an issue or submit a pull request.
+- Sidebar toggle buttons, nav headers, tab headers, and other UI chrome are hidden unless hovered or focused.
+- Tab bar dynamically hides when only a single tab is open.
+- Status bar, backlinks, and file metadata are grayed and semi-transparent until hovered or focused.
+- Optional always-hidden mode for the tab bar.
+- Sidebar headers (tags, backlinks, outline, etc.) and graph controls are only visible on hover.
+- Scrollbars, tooltips, flair, and instruction text are removed or minimized where possible.
+- Improves spacing between headers and paragraphs for cleaner readability.
 
-I'm mainly developing this theme for myself but I'll try to address any issues or requests to the best of my ability.
+### 📚 Per-Note Visual Customization
 
-## Development Guide
+Use the `cssclasses` frontmatter property to apply scoped styles per note.
+
+- Invert, grayscale, sepia, or blur images—with effects removed on hover.
+- Align images or text left, right, center, or justify.
+- Scale images smoothly on hover.
+- Transform text to uppercase, lowercase, or capitalized.
+- Switch text to monospace or apply specific font weights (thin to black).
+
+💡 _Tip: Create a [note](https://github.com/mvahaste/meridian/blob/main/CSS%20Class%20Suggestions.md) with all available styles applied to enable suggestions._
+
+### ⚙️ Configurable Settings
+
+Tailor the theme's appearance and behavior through various toggles and sliders via the Style Settings plugin.
+
+- **Background Opacity** — Adjust the transparency of the background mask (0–1).
+- **Minimal Image Captions** — Toggle a cleaner, low-profile style for image captions (requires the [Image Captions](https://github.com/alangrainger/obsidian-image-captions) plugin).
+- **Show Header Levels** — Choose to always display header levels or only on hover in preview mode.
+- **Show Header Hashtags** — Optionally show `#` before headers in preview mode.
+- **Hide Header Link Underline** — Remove underlines from linked headers for a sleeker look.
+- **Hide Tab Bar** — Choose between dynamically hiding the tab bar, always hiding it, or never hiding it.
+- **De-emphasize UI Elements** — Soften visual prominence of the status bar, file properties, and embedded backlinks in preview mode.
+
+## 🐛 Issues & Feature Requests
+
+Meridian is a personal project, but I welcome contributions and feedback. I'll do my best to address issues and feature requests as time allows.
+
+## 🛠 Development Guide
 
 1. Fork or clone this repository.
 2. Create a `.env` file in the root directory of the repository with `.env.example` as a template.
 3. Run `npm install` to install all dependencies
 4. Run `npm start` to compile the theme into your Obsidian themes directory and watch for changes.
 
-## Acknowledgements
+## ❤️ Acknowledgements
 
 - Forked from the [Apex](https://github.com/clearlysid/apex) theme.
+- Configurable via the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin.
+
+## 📄 License
+
+This theme is distributed under the [MIT License](LICENSE).
