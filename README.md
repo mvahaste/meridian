@@ -6,16 +6,17 @@ A sleek and minimal theme for [Obsidian](https://obsidian.md).
 
 # 📑 Table of Contents
 
-- [🚀 Quickstart](#🚀-quickstart)
-  - [📦 Community Themes](#📦-community-themes)
-  - [🛠️ Manual Installation](#🛠️-manual-installation)
-- [✨ Features](#✨-features)
-  - [🧼 Minimal & Uncluttered UI](#🧼-minimal-&-uncluttered-ui)
-  - [📚 Per-Note Visual Customization](#📚-per-note-visual-customization)
-  - [⚙️ Configurable Settings](#⚙️-configurable-settings)
-- [🐛 Issues & Feature Requests](#🐛-issues-&-feature-requests)
-- [🛠 Development Guide](#🛠-development-guide)
-- [❤️ Acknowledgements](#❤️-acknowledgements)
+- [🚀 Quickstart](#-quickstart)
+  - [📦 Community Themes](#-community-themes)
+  - [🛠️ Manual Installation](#%EF%B8%8F-manual-installation)
+- [✨ Features](#-features)
+  - [🧼 Minimal & Uncluttered UI](#-minimal--uncluttered-ui)
+  - [📚 Per-Note Visual Customization](#-per-note-visual-customization)
+  - [⚙️ Configurable Settings](#%EF%B8%8F-configurable-settings)
+- [🐛 Issues & Feature Requests](#-issues--feature-requests)
+- [🛠 Development Guide](#-development-guide)
+- [❤️ Acknowledgements](#%EF%B8%8F-acknowledgements)
+- [📄 License](#-license)
 
 ## 🚀 Quickstart
 
