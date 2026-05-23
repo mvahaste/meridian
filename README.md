@@ -87,6 +87,8 @@ Meridian is a personal project, but I welcome contributions and feedback. I'll d
 2. Create a `.env` file in the root directory of the repository with `.env.example` as a template.
 3. Run `npm install` to install all dependencies
 4. Run `npm start` to compile the theme into your Obsidian themes directory and watch for changes.
+5. Bump the version with `npm version [patch|minor|major]` to update `manifest.json`, `versions.json`, and create a git tag.
+6. Push with `git push origin dev --tags` and then merge `dev` into `main` via a PR on GitHub.
 
 ## Acknowledgements
 
